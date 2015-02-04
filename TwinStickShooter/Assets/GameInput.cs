@@ -3,8 +3,8 @@ using System.Collections;
 
 public class GameInput : MonoBehaviour {
 
-	static float ejeX;
-	static float ejeY;
+	static public float ejeX;
+	static public float ejeY;
 	// Use this for initialization
 	void Start () {
 	
