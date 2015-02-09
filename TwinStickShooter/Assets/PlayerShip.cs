@@ -6,6 +6,7 @@ public class PlayerShip : MonoBehaviour {
 	public float maxSpeed = 0.5f;
 	public float dragInInput = 0.1f;
 	public float dragLateral = 0.5f;
+	public float dragBreak = 0.2f;
 	public float aceleracionInDirection = 5f;
 	public float aceleracionInOppositeDir = 10f;
 	// Use this for initialization
@@ -17,18 +18,23 @@ public class PlayerShip : MonoBehaviour {
 	void FixedUpdate () {
 		Vector2 input= GameInput.ejeX * Vector2.right + GameInput.ejeY * Vector2.up;
 		Vector2 vel = rigidbody2D.velocity;
-		Vector2 velA = Vector2.Project (vel,input);
-		Vector2 velB = vel - velA;
-		velA = velA * dragInInput;
-		velB = velB * dragLateral;
-		Vector2 velFinal = velA + velB;
+		if (input.magnitude < 0.2f || vel.magnitude < 1f) {
+			vel = vel * dragBreak;
+		} else {
+			Vector2 velA = input.normalized * Mathf.Cos(Mathf.Deg2Rad*Vector2.Angle (input, vel))*vel.magnitude;
+			Vector2 velB = input.normalized * Mathf.Sin(Mathf.Deg2Rad*Vector2.Angle (vel,input))*vel.magnitude;
+			velB = new Vector2(-velB.y,velB.x);
+			velA = velA * dragInInput;
+			velB = velB * dragLateral;
+			vel = velA + velB;
+		}
 		input.Normalize();
-		if (Vector2.Angle (velFinal, input) < 90) {
+		if (Vector2.Angle (vel, input) < 90) {
 			input *= aceleracionInDirection;
 		} else {
 			
 			input *= aceleracionInOppositeDir;
 		}
-		rigidbody2D.velocity = velFinal + input ;
+		rigidbody2D.velocity = vel + input ;
 	}
 }
