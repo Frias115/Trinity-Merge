@@ -9,6 +9,8 @@ public class PlayerShip : MonoBehaviour {
 	public float dragBreak = 0.2f;
 	public float aceleracionInDirection = 5f;
 	public float aceleracionInOppositeDir = 10f;
+	public static float playerPositionX;
+	public static float playerPositionY;
 	// Use this for initialization
 	void Start () {
 	
@@ -27,14 +29,15 @@ public class PlayerShip : MonoBehaviour {
 			velA = velA * dragInInput;
 			velB = velB * dragLateral;
 			vel = velA + velB;
+			input.Normalize();
 		}
-		input.Normalize();
 		if (Vector2.Angle (vel, input) < 90) {
 			input *= aceleracionInDirection;
 		} else {
-			
 			input *= aceleracionInOppositeDir;
 		}
-		rigidbody2D.velocity = vel + input ;
+		rigidbody2D.velocity = vel + input ; 
+		playerPositionX = vel.x + input.x;
+		playerPositionY = vel.y + input.y;
 	}
 }
