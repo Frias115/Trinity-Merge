@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerShip : MonoBehaviour {
+public class tommy : MonoBehaviour {
 
 	public float maxSpeed = 0.5f;
 	public float dragInInput = 0.1f;
@@ -11,6 +11,8 @@ public class PlayerShip : MonoBehaviour {
 	public float aceleracionInOppositeDir = 10f;
 	public static float playerPositionX;
 	public static float playerPositionY;
+	public GameObject bala;
+	public float rotationInterpolation = 0.5f;
 	// Use this for initialization
 	void Start () {
 	
