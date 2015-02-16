@@ -39,5 +39,18 @@ public class PlayerShip : MonoBehaviour {
 		rigidbody2D.velocity = vel + input ; 
 		playerPositionX = vel.x + input.x;
 		playerPositionY = vel.y + input.y;
+
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			GameObject baladisparada = (GameObject)Instantiate (bala, bala.transform.position, bala.transform.rotation); 
+			baladisparada.SetActive (true);
+		}
 	}
+
+	void Update(){
+		Vector2 firingDirection = Vector2.right*GameInput.ejeXDisparo + Vector2.up*GameInput.ejeYDisparo;
+		if (firingDirection.magnitude > 0.2f) {
+			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (Vector3.forward, firingDirection),rotationInterpolation*Time.deltaTime);
+		}
+	}
+
 }
