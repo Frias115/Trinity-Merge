@@ -1,21 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class tommy : MonoBehaviour {
-
+public class PlayerShip : MonoBehaviour {
+	
 	public float maxSpeed = 0.5f;
 	public float dragInInput = 0.1f;
 	public float dragLateral = 0.5f;
 	public float dragBreak = 0.2f;
 	public float aceleracionInDirection = 5f;
 	public float aceleracionInOppositeDir = 10f;
-	public static float playerPositionX;
-	public static float playerPositionY;
+	public static Vector3 playerPosition;
 	public GameObject bala;
 	public float rotationInterpolation = 0.5f;
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -39,20 +38,22 @@ public class tommy : MonoBehaviour {
 			input *= aceleracionInOppositeDir;
 		}
 		rigidbody2D.velocity = vel + input ; 
-		playerPositionX = vel.x + input.x;
-		playerPositionY = vel.y + input.y;
-
+		
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			GameObject baladisparada = (GameObject)Instantiate (bala, bala.transform.position, bala.transform.rotation); 
 			baladisparada.SetActive (true);
 		}
+		
+		playerPosition = transform.position;
+		
+		
 	}
-
+	
 	void Update(){
 		Vector2 firingDirection = Vector2.right*GameInput.ejeXDisparo + Vector2.up*GameInput.ejeYDisparo;
 		if (firingDirection.magnitude > 0.2f) {
 			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (Vector3.forward, firingDirection),rotationInterpolation*Time.deltaTime);
 		}
 	}
-
+	
 }
