@@ -9,9 +9,12 @@ public class PlayerShip : MonoBehaviour {
 	public float dragBreak = 0.2f;
 	public float aceleracionInDirection = 5f;
 	public float aceleracionInOppositeDir = 10f;
-	public static Vector3 playerPosition;
+	public static float playerPositionX;
+	public static float playerPositionY;
 	public GameObject bala;
 	public float rotationInterpolation = 0.5f;
+	public float timeBetweenShots = 0.5f;
+	float shotTimer = 0;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,6 +22,7 @@ public class PlayerShip : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		shotTimer += Time.deltaTime;
 		Vector2 input= GameInput.ejeX * Vector2.right + GameInput.ejeY * Vector2.up;
 		Vector2 vel = rigidbody2D.velocity;
 		if (input.magnitude < 0.2f || vel.magnitude < 1f) {
@@ -38,15 +42,18 @@ public class PlayerShip : MonoBehaviour {
 			input *= aceleracionInOppositeDir;
 		}
 		rigidbody2D.velocity = vel + input ; 
+		playerPositionX = transform.position.x;
+		playerPositionY = transform.position.y;
 		
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		Vector2 firingDirection = Vector2.right*GameInput.ejeXDisparo + Vector2.up*GameInput.ejeYDisparo;
+		if (firingDirection.magnitude >= 0.5f && shotTimer >= timeBetweenShots) {
 			GameObject baladisparada = (GameObject)Instantiate (bala, bala.transform.position, bala.transform.rotation); 
 			baladisparada.SetActive (true);
+			while(shotTimer >= timeBetweenShots)
+				shotTimer -= timeBetweenShots;
 		}
-		
-		playerPosition = transform.position;
-		
-		
+
+
 	}
 	
 	void Update(){

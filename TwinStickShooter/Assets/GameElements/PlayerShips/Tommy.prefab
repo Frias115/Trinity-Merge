@@ -40,6 +40,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &185762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 485762}
+  - 33: {fileID: 3385762}
+  - 65: {fileID: 6585762}
+  - 23: {fileID: 2385762}
+  m_Layer: 8
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &473916
 Transform:
   m_ObjectHideFlags: 1
@@ -47,10 +65,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.53661084, y: 9.60480785, z: -7.15172195}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473918}
+  - {fileID: 485762}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &473918
@@ -65,6 +84,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 473916}
   m_RootOrder: 0
+--- !u!4 &485762
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .00999999978, y: .230000004, z: .0700000003}
+  m_LocalScale: {x: .154350281, y: 1.33000946, z: 1}
+  m_Children: []
+  m_Father: {fileID: 473916}
+  m_RootOrder: 1
 --- !u!23 &2373916
 Renderer:
   m_ObjectHideFlags: 1
@@ -105,6 +136,26 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!23 &2385762
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185762}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!33 &3373916
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -119,6 +170,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173918}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &3385762
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185762}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!50 &5073916
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -131,9 +189,9 @@ Rigidbody2D:
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!50 &5073918
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -144,11 +202,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!58 &5873918
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -171,6 +229,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
+--- !u!65 &6585762
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11473916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,17 +249,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 173916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5e5e9395fe4ab449bab01dcd67890d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f9d039398e26f1488cafcf9e9b1a507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 11
-  dragInInput: .899999976
+  maxSpeed: .5
+  dragInInput: .100000001
   dragLateral: .5
-  dragBreak: .649999976
-  aceleracionInDirection: 3
-  aceleracionInOppositeDir: 6
+  dragBreak: .200000003
+  aceleracionInDirection: 5
+  aceleracionInOppositeDir: 10
   bala: {fileID: 173918}
-  rotationInterpolation: .5
+  rotationInterpolation: 19
+  timeBetweenShots: .0500000007
 --- !u!114 &11473918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -220,22 +291,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: .5
       value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 0
+      inSlope: Infinity
+      outSlope: Infinity
       tangentMode: 0
-    m_PreInfinity: 1
-    m_PostInfinity: 1
+    m_PreInfinity: 2
+    m_PostInfinity: 2
   frontalLoop: 3
   lateralLoop: .5
   velocidadFrontal: 25

@@ -1,8 +1,40 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &199742
+--- !u!1 &152694
 GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 452694}
+  m_Layer: 0
+  m_Name: Disparo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &152696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 452696}
+  - 33: {fileID: 3352694}
+  - 23: {fileID: 2352694}
+  m_Layer: 8
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &199742
+GameObject:
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -19,7 +51,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &199744
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,10 +71,10 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &199746
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -59,7 +91,33 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!4 &452694
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 499746}
+  - {fileID: 499742}
+  m_Father: {fileID: 499744}
+  m_RootOrder: 1
+--- !u!4 &452696
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .00999999978, y: .349999994, z: .0199999996}
+  m_LocalScale: {x: .196664795, y: 1.7029171, z: 1}
+  m_Children: []
+  m_Father: {fileID: 499744}
+  m_RootOrder: 0
 --- !u!4 &499742
 Transform:
   m_ObjectHideFlags: 1
@@ -70,7 +128,7 @@ Transform:
   m_LocalPosition: {x: .183387756, y: .054807663, z: .208278179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 499744}
+  m_Father: {fileID: 452694}
   m_RootOrder: 1
 --- !u!4 &499744
 Transform:
@@ -79,11 +137,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.7700005, y: 10.8000002, z: -7.36000013}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 499746}
-  - {fileID: 499742}
+  - {fileID: 452696}
+  - {fileID: 452694}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &499746
@@ -96,8 +154,28 @@ Transform:
   m_LocalPosition: {x: .183387756, y: .054807663, z: .208278179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 499744}
+  m_Father: {fileID: 452694}
   m_RootOrder: 0
+--- !u!23 &2352694
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152696}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2399742
 Renderer:
   m_ObjectHideFlags: 1
@@ -158,6 +236,13 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!33 &3352694
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152696}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &3399742
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -189,11 +274,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!50 &5099744
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -206,9 +291,9 @@ Rigidbody2D:
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!50 &5099746
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -219,11 +304,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!58 &5899742
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -287,17 +372,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 1
+      value: -1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - time: .5
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - time: 1
-      value: 1
+      value: -1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -315,7 +400,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 199744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5e5e9395fe4ab449bab01dcd67890d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f9d039398e26f1488cafcf9e9b1a507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: .5
@@ -324,8 +409,9 @@ MonoBehaviour:
   dragBreak: .200000003
   aceleracionInDirection: 5
   aceleracionInOppositeDir: 10
-  bala: {fileID: 199746}
-  rotationInterpolation: 19
+  bala: {fileID: 152694}
+  rotationInterpolation: 15
+  timeBetweenShots: .100000001
 --- !u!114 &11499746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -361,7 +447,7 @@ MonoBehaviour:
       outSlope: 0
       tangentMode: 0
     - time: .5
-      value: 0
+      value: -1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
