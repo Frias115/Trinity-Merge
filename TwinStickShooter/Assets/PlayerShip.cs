@@ -9,8 +9,7 @@ public class PlayerShip : MonoBehaviour {
 	public float dragBreak = 0.2f;
 	public float aceleracionInDirection = 5f;
 	public float aceleracionInOppositeDir = 10f;
-	public static float playerPositionX;
-	public static float playerPositionY;
+	public static Vector3 playerPosition;
 	public GameObject bala;
 	public float rotationInterpolation = 0.5f;
 	public float timeBetweenShots = 0.5f;
@@ -42,8 +41,6 @@ public class PlayerShip : MonoBehaviour {
 			input *= aceleracionInOppositeDir;
 		}
 		rigidbody2D.velocity = vel + input ; 
-		playerPositionX = transform.position.x;
-		playerPositionY = transform.position.y;
 		
 		Vector2 firingDirection = Vector2.right*GameInput.ejeXDisparo + Vector2.up*GameInput.ejeYDisparo;
 		if (firingDirection.magnitude >= 0.5f && shotTimer >= timeBetweenShots) {
@@ -53,6 +50,7 @@ public class PlayerShip : MonoBehaviour {
 				shotTimer -= timeBetweenShots;
 		}
 
+		playerPosition = transform.position;
 
 	}
 	
