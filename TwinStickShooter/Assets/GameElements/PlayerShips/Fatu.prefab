@@ -71,7 +71,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &199746
 GameObject:
   m_ObjectHideFlags: 1
@@ -318,7 +318,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .50000006
+  m_Radius: .300000101
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5899744
 CircleCollider2D:
@@ -329,7 +329,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .50000006
+  m_Radius: .300000101
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!61 &6199742
 BoxCollider2D:
@@ -407,8 +407,8 @@ MonoBehaviour:
   dragInInput: .100000001
   dragLateral: .5
   dragBreak: .200000003
-  aceleracionInDirection: 5
-  aceleracionInOppositeDir: 10
+  aceleracionInDirection: 10
+  aceleracionInOppositeDir: 20
   bala: {fileID: 152694}
   rotationInterpolation: 15
   timeBetweenShots: .100000001
