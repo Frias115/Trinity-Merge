@@ -216,7 +216,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .300000101
+  m_Radius: .50000006
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!61 &6173918
 BoxCollider2D:
@@ -256,11 +256,11 @@ MonoBehaviour:
   dragInInput: .100000001
   dragLateral: .5
   dragBreak: .200000003
-  aceleracionInDirection: 15
-  aceleracionInOppositeDir: 30
+  aceleracionInDirection: 5
+  aceleracionInOppositeDir: 10
   bala: {fileID: 173918}
   rotationInterpolation: 19
-  timeBetweenShots: .200000003
+  timeBetweenShots: .0500000007
 --- !u!114 &11473918
 MonoBehaviour:
   m_ObjectHideFlags: 1
