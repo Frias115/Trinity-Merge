@@ -256,11 +256,11 @@ MonoBehaviour:
   dragInInput: .100000001
   dragLateral: .5
   dragBreak: .200000003
-  aceleracionInDirection: 5
-  aceleracionInOppositeDir: 10
+  aceleracionInDirection: 20
+  aceleracionInOppositeDir: 40
   bala: {fileID: 173918}
   rotationInterpolation: 19
-  timeBetweenShots: .0500000007
+  timeBetweenShots: .200000003
 --- !u!114 &11473918
 MonoBehaviour:
   m_ObjectHideFlags: 1

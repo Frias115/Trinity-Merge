@@ -546,8 +546,8 @@ MonoBehaviour:
   dragInInput: .100000001
   dragLateral: .5
   dragBreak: .200000003
-  aceleracionInDirection: 5
-  aceleracionInOppositeDir: 10
+  aceleracionInDirection: 10
+  aceleracionInOppositeDir: 20
   bala: {fileID: 149474}
   rotationInterpolation: 20
   timeBetweenShots: .5
