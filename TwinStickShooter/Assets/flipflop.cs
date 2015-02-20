@@ -9,9 +9,8 @@ public class flipflop : EnemyShip {
 		Vector3 dir = (PlayerShip.playerPosition - transform.position).normalized;
 		Quaternion rot = Quaternion.LookRotation (Vector3.forward, dir);
 		transform.rotation = Quaternion.Slerp (transform.rotation,rot, rotationSpeed*Time.deltaTime);
-		
-		
-		
+
 		base.Move ();
+		base.Shoot ();
 	}
 }

@@ -14,9 +14,11 @@ public class PlayerShip : MonoBehaviour {
 	public float rotationInterpolation = 0.5f;
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
+	public static GUIText scoreText;
+	public static int score = 0;
 	// Use this for initialization
 	void Start () {
-		
+	
 	}
 	
 	// Update is called once per frame
