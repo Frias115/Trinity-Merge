@@ -27,6 +27,8 @@ public class Bala : MonoBehaviour {
 			{
 				//enemy.
 				Destroy(col.gameObject);
+				//Quiero que las balas se destruyan cuando colisionan con los enemigos. 
+				Destroy(this.gameObject);
 			}
 		}
 
