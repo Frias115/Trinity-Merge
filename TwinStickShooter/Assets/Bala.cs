@@ -15,6 +15,8 @@ public class Bala : MonoBehaviour {
 	
 	public float velocidadFrontal, velocidadLateral;
 
+	public int damage = 1;
+
 	float timer = 0;
 
 	// Update is called once per frame
@@ -26,13 +28,11 @@ public class Bala : MonoBehaviour {
 			if(enemy != null)
 			{
 				//enemy.
-				Destroy(col.gameObject);
-				
-				PlayerShip.score += enemy.score;
-				PlayerShip.scoreText.text = "Score: " + PlayerShip.score;
+				GameController.AddScore();
 				//Quiero que las balas se destruyan cuando colisionan con los enemigos. 
-				Destroy(this.gameObject);
+				enemy.Damage(damage);
 			}
+			Destroy(gameObject);
 		}
 
 

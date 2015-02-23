@@ -3,13 +3,7 @@ using System.Collections;
 
 public class EnemyShip : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-
 	public int score = 100;
-	
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
 	public float velocidadFrontal, velocidadLateral;
@@ -17,12 +11,24 @@ public class EnemyShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	protected float shotTimer = 0;
 	public GameObject balaEnemigo;
+	public int health = 1;
+
+	// Use this for initialization
+	void Start () {
+		healthLeft = health;
+	}
+
+	public void Damage(int damage){
+		health -= damage;
+	}
+
 
 	// Update is called once per frame
 	void Update () {
 		timer += Time.deltaTime;
 		Move ();
 		Shoot ();
+		Die ();
 	}
 
 	void OnCollisionEnter2D (Collision2D col)
@@ -36,6 +42,14 @@ public class EnemyShip : MonoBehaviour {
 			Destroy(this.gameObject);
 		}
 	}
+
+	public virtual void Die()
+	{
+		if (healthLeft <= 0) {
+			Destroy(this.gameObject);
+		}
+	}
+
 
 	public virtual void Move(){
 		rigidbody2D.velocity = transform.up *frontalCurve.Evaluate(timer/frontalLoop) *velocidadFrontal + transform.right *lateralCurve.Evaluate(timer/lateralLoop) *velocidadLateral ;
