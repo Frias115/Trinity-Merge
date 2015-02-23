@@ -8,6 +8,7 @@ public class EnemyShip : MonoBehaviour {
 	
 	}
 
+	public int score = 100;
 	
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
@@ -43,7 +44,7 @@ public class EnemyShip : MonoBehaviour {
 	public virtual void Shoot(){
 		
 		shotTimer += Time.deltaTime + timeBetweenShots;
-		if (shotTimer >= 4) {
+		if (shotTimer >= 4 && balaEnemigo != null) {
 			GameObject baladisparada = (GameObject)Instantiate (balaEnemigo, balaEnemigo.transform.position, balaEnemigo.transform.rotation); 
 			baladisparada.SetActive (true);
 			shotTimer = 0;

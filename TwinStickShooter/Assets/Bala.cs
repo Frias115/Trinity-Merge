@@ -28,7 +28,7 @@ public class Bala : MonoBehaviour {
 				//enemy.
 				Destroy(col.gameObject);
 				
-				PlayerShip.score += 100;
+				PlayerShip.score += enemy.score;
 				PlayerShip.scoreText.text = "Score: " + PlayerShip.score;
 				//Quiero que las balas se destruyan cuando colisionan con los enemigos. 
 				Destroy(this.gameObject);
