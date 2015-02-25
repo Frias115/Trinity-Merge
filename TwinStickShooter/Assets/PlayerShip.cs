@@ -14,6 +14,9 @@ public class PlayerShip : MonoBehaviour {
 	public float rotationInterpolation = 0.5f;
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
+	public int healthPlayer = 1;
+	public static int damagePlayer = 1;
+
 
 	// Use this for initialization
 	void Start () {
@@ -42,7 +45,8 @@ public class PlayerShip : MonoBehaviour {
 			input *= aceleracionInOppositeDir;
 		}
 		rigidbody2D.velocity = vel + input ; 
-		
+
+		//Diparo jugador
 		Vector2 firingDirection = Vector2.right*GameInput.ejeXDisparo + Vector2.up*GameInput.ejeYDisparo;
 		if (firingDirection.magnitude >= 0.5f && shotTimer >= timeBetweenShots) {
 			GameObject baladisparada = (GameObject)Instantiate (bala, bala.transform.position, bala.transform.rotation); 
@@ -51,9 +55,21 @@ public class PlayerShip : MonoBehaviour {
 				shotTimer -= timeBetweenShots;
 		}
 
+		//Posicion jugador
 		playerPosition = transform.position;
 
 	}
+
+	
+	public void Damage(int damage)
+	{
+		healthPlayer -= damage;
+		if (healthPlayer <= 0) {
+			Destroy(this.gameObject);
+		}
+	}
+
+
 	
 	void Update(){
 		Vector2 firingDirection = Vector2.right*GameInput.ejeXDisparo + Vector2.up*GameInput.ejeYDisparo;

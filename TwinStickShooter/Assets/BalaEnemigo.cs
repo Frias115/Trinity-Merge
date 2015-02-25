@@ -22,11 +22,9 @@ public class BalaEnemigo : MonoBehaviour {
 		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
 		if(player != null)
 		{
-			//player.
-			Destroy(col.gameObject);
-			//Quiero que las balas se destruyan cuando colisionan con el player. 
-			Destroy(this.gameObject);
+			player.Damage(EnemyShip.damageEnemy);
 		}
+		Destroy(gameObject);
 	}
 	
 	

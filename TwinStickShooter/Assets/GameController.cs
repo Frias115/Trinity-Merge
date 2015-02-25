@@ -17,9 +17,9 @@ public class GameController : MonoBehaviour {
 	
 	}
 
-	public static void AddScore(){
-		PlayerShip.score += enemy.score;
-		PlayerShip.scoreText.text = "Score: " + PlayerShip.score;
+	public static void AddScore(int enemyValue){
+		score += enemyValue;
+		scoreText.text = "Score: " + score;
 	}
 	
 }

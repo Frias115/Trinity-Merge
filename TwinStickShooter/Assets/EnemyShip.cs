@@ -11,16 +11,15 @@ public class EnemyShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	protected float shotTimer = 0;
 	public GameObject balaEnemigo;
-	public int health = 1;
+	public int healthEnemy = 1;
+	public static int damageEnemy = 1;
+
 
 	// Use this for initialization
 	void Start () {
-		healthLeft = health;
+
 	}
 
-	public void Damage(int damage){
-		health -= damage;
-	}
 
 
 	// Update is called once per frame
@@ -28,7 +27,6 @@ public class EnemyShip : MonoBehaviour {
 		timer += Time.deltaTime;
 		Move ();
 		Shoot ();
-		Die ();
 	}
 
 	void OnCollisionEnter2D (Collision2D col)
@@ -36,16 +34,15 @@ public class EnemyShip : MonoBehaviour {
 		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
 		if(player != null)
 		{
-			//player.
-			Destroy(col.gameObject);
-			//Quiero que las balas se destruyan cuando colisionan con el player. 
-			Destroy(this.gameObject);
+			player.Damage(EnemyShip.damageEnemy);
 		}
+		Destroy(gameObject);
 	}
 
-	public virtual void Die()
+	public virtual void Damage(int damage)
 	{
-		if (healthLeft <= 0) {
+		healthEnemy -= damage;
+		if (healthEnemy <= 0) {
 			Destroy(this.gameObject);
 		}
 	}

@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fe0c0c390b8f644a875500c60e968d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -238,6 +239,7 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .0199999996
   balaEnemigo: {fileID: 176994}
+  healthEnemy: 1
   rotationSpeed: 100
 --- !u!114 &11476994
 MonoBehaviour:
