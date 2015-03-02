@@ -15,15 +15,10 @@ public class PlayerShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
 	public int _healthPlayer = 1;
-	public static int healthPlayer;
-	public int _damagePlayer = 1;
-	public static int damagePlayer;
 
 
 	// Use this for initialization
 	void Start () {
-		damagePlayer = _damagePlayer;
-		healthPlayer = _healthPlayer;
 	}
 	
 	// Update is called once per frame
@@ -66,8 +61,10 @@ public class PlayerShip : MonoBehaviour {
 	
 	public void Damage(int damage)
 	{
-		healthPlayer -= damage;
-		if (healthPlayer <= 0) {
+		_healthPlayer -= damage;
+		CameraMovement.Shake ();
+		CameraMovement.HitStop ();
+		if (_healthPlayer <= 0) {
 			Destroy(this.gameObject);
 		}
 	}
@@ -75,9 +72,9 @@ public class PlayerShip : MonoBehaviour {
 
 	
 	void Update(){
-		Vector2 firingDirection = Vector2.right*GameInput.ejeXDisparo + Vector2.up*GameInput.ejeYDisparo;
-		if (firingDirection.magnitude > 0.2f) {
-			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (Vector3.forward, firingDirection),rotationInterpolation*Time.deltaTime);
+		Vector2 firingDirection = Vector2.right * GameInput.ejeXDisparo + Vector2.up * GameInput.ejeYDisparo;
+		if (firingDirection.magnitude > 0.5f) {
+			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (Vector3.forward, firingDirection), rotationInterpolation * Time.deltaTime);
 		}
 	}
 	

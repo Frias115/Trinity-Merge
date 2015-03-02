@@ -9,18 +9,14 @@ public class EnemyShip : MonoBehaviour {
 	public float velocidadFrontal, velocidadLateral;
 	protected float timer = 0;
 	public float timeBetweenShots = 0.5f;
-	protected float shotTimer = 0;
+	static float shotTimer = 0;
 	public GameObject balaEnemigo;
-	public static int healthEnemy;
 	public int _healthEnemy = 1;
 	public int _damageEnemy = 1;
-	public static int damageEnemy;
 
 
 	// Use this for initialization
 	void Start () {
-		damageEnemy = _damageEnemy;
-		healthEnemy = _healthEnemy;
 	}
 
 
@@ -37,15 +33,15 @@ public class EnemyShip : MonoBehaviour {
 		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
 		if(player != null)
 		{
-			player.Damage(EnemyShip.damageEnemy);
+			player.Damage(this._damageEnemy);
+			Destroy(gameObject);
 		}
-		Destroy(gameObject);
 	}
 
 	public virtual void Damage(int damage)
 	{
-		healthEnemy -= damage;
-		if (healthEnemy <= 0) {
+		_healthEnemy -= damage;
+		if (_healthEnemy <= 0) {
 			Destroy(this.gameObject);
 		}
 	}
@@ -56,9 +52,8 @@ public class EnemyShip : MonoBehaviour {
 	}
 
 	public virtual void Shoot(){
-		
-		shotTimer += Time.deltaTime + timeBetweenShots;
-		if (shotTimer >= 4 && balaEnemigo != null) {
+		shotTimer += Time.deltaTime;
+		if (shotTimer > timeBetweenShots) {
 			GameObject baladisparada = (GameObject)Instantiate (balaEnemigo, balaEnemigo.transform.position, balaEnemigo.transform.rotation); 
 			baladisparada.SetActive (true);
 			shotTimer = 0;

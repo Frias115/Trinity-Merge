@@ -8,6 +8,8 @@ public class BalaEnemigo : MonoBehaviour {
 	
 	}
 
+	public int damage;
+
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
 	public float velocidadFrontal, velocidadLateral;
@@ -22,7 +24,7 @@ public class BalaEnemigo : MonoBehaviour {
 		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
 		if(player != null)
 		{
-			player.Damage(EnemyShip.damageEnemy);
+			player.Damage(this.damage);
 		}
 		Destroy(gameObject);
 	}

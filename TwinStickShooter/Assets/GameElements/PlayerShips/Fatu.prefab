@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452694}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Disparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,9 +62,9 @@ GameObject:
   - 4: {fileID: 499744}
   - 33: {fileID: 3399744}
   - 23: {fileID: 2399744}
-  - 61: {fileID: 6199742}
   - 50: {fileID: 5099744}
   - 114: {fileID: 11499744}
+  - 58: {fileID: 5870038}
   m_Layer: 8
   m_Name: Fatu
   m_TagString: Untagged
@@ -126,7 +126,7 @@ Transform:
   m_GameObject: {fileID: 199742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .183387756, y: .054807663, z: .208278179}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 452694}
   m_RootOrder: 1
@@ -137,7 +137,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -12.1000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 452696}
@@ -152,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 199746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .183387756, y: .054807663, z: .208278179}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 452694}
   m_RootOrder: 0
@@ -188,7 +188,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: e6e8a5085b1f52b4aac1711d45ab1e1f, type: 2}
+  - {fileID: 2100000, guid: 49a0d59119c10a64f81dea796856093e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -228,7 +228,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: e6e8a5085b1f52b4aac1711d45ab1e1f, type: 2}
+  - {fileID: 2100000, guid: 49a0d59119c10a64f81dea796856093e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -249,7 +249,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199742}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &3399744
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -263,7 +263,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199746}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!50 &5099742
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -276,7 +276,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
-  m_Interpolate: 2
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
 --- !u!50 &5099744
@@ -291,7 +291,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
-  m_Interpolate: 2
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
 --- !u!50 &5099746
@@ -306,9 +306,20 @@ Rigidbody2D:
   m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
-  m_Interpolate: 2
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
+--- !u!58 &5870038
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199744}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .5
+  m_Center: {x: 0, y: 0}
 --- !u!58 &5899742
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -331,17 +342,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .50000006
   m_Center: {x: 5.96046448e-08, y: 0}
---- !u!61 &6199742
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 199744}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
 --- !u!114 &11499742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -353,6 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc190d87287cd754984c57facfec2cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -389,9 +390,9 @@ MonoBehaviour:
     m_PreInfinity: 1
     m_PostInfinity: 1
   frontalLoop: 3
-  lateralLoop: .5
-  velocidadFrontal: 25
-  velocidadLateral: 30
+  lateralLoop: .200000003
+  velocidadFrontal: 100
+  velocidadLateral: 60
 --- !u!114 &11499744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -411,9 +412,8 @@ MonoBehaviour:
   aceleracionInOppositeDir: 30
   bala: {fileID: 152694}
   rotationInterpolation: 15
-  timeBetweenShots: .300000012
-  _healthPlayer: 5
-  _damagePlayer: 1
+  timeBetweenShots: .150000006
+  _healthPlayer: 10
 --- !u!114 &11499746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -425,6 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc190d87287cd754984c57facfec2cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -461,9 +462,9 @@ MonoBehaviour:
     m_PreInfinity: 1
     m_PostInfinity: 1
   frontalLoop: 3
-  lateralLoop: .5
-  velocidadFrontal: 25
-  velocidadLateral: 30
+  lateralLoop: .200000003
+  velocidadFrontal: 100
+  velocidadLateral: 60
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

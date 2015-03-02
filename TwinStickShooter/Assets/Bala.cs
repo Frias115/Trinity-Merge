@@ -9,6 +9,7 @@ public class Bala : MonoBehaviour {
 	}
 
 
+	public int damage;
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
 	
@@ -26,10 +27,9 @@ public class Bala : MonoBehaviour {
 			if(enemy != null)
 			{
 				GameController.AddScore(enemy.score);
-				
-				enemy.Damage(PlayerShip.damagePlayer);
+				enemy.Damage(damage);
 			}
-			Destroy(gameObject);
+			Destroy(this.gameObject);
 		}
 
 

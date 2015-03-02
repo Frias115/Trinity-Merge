@@ -228,7 +228,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 113194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_Interpolate
@@ -428,7 +428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &59665982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +611,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 155804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: velocidadFrontal
@@ -902,7 +902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &169891588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1293,7 +1293,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 155804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: velocidadFrontal
@@ -1409,7 +1409,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 155804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: velocidadFrontal
@@ -1451,7 +1451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &361533105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1740,7 +1740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &462251125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2042,7 +2042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &488627629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2339,7 +2339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &568194750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,7 +2578,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 113194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_Interpolate
@@ -2616,7 +2616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &676400987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2777,7 +2777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &708827205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3011,7 +3011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &744652981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3172,7 +3172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &753248142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3407,7 +3407,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 113194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_Interpolate
@@ -3629,7 +3629,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 113194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_Interpolate
@@ -3918,7 +3918,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 155804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: velocidadFrontal
@@ -3982,7 +3982,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 113194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_Interpolate
@@ -4132,7 +4132,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 155804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: velocidadFrontal
@@ -4336,7 +4336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1150567273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4497,7 +4497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1182841254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5017,7 +5017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1402531666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5352,7 +5352,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11476992, guid: c6162429621a18d4e9310d784a17630a, type: 2}
       propertyPath: timeBetweenShots
-      value: .5
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6162429621a18d4e9310d784a17630a, type: 2}
@@ -5536,7 +5536,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 155804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: velocidadFrontal
@@ -5678,7 +5678,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 113194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_Interpolate
@@ -5738,7 +5738,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 113194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_Interpolate
@@ -5857,7 +5857,7 @@ MonoBehaviour:
   lateralLoop: .5
   velocidadFrontal: 1
   velocidadLateral: 0
-  timeBetweenShots: .5
+  timeBetweenShots: 3
   balaEnemigo: {fileID: 132040579}
   _healthEnemy: 15
   _damageEnemy: 1
@@ -5938,7 +5938,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1764825431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6121,7 +6121,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 155804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: velocidadFrontal
@@ -6163,7 +6163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1797740610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6822,7 +6822,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 113194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5013194, guid: 30f7d2dc44c52cd4ca244eec5a379c05, type: 2}
       propertyPath: m_Interpolate
@@ -6860,7 +6860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2063479533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7179,7 +7179,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 155804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11455804, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
       propertyPath: velocidadFrontal
