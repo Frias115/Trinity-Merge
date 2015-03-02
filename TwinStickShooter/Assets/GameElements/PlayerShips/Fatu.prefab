@@ -412,6 +412,8 @@ MonoBehaviour:
   bala: {fileID: 152694}
   rotationInterpolation: 15
   timeBetweenShots: .300000012
+  _healthPlayer: 5
+  _damagePlayer: 1
 --- !u!114 &11499746
 MonoBehaviour:
   m_ObjectHideFlags: 1

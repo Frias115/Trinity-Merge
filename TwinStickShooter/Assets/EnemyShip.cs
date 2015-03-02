@@ -11,13 +11,16 @@ public class EnemyShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	protected float shotTimer = 0;
 	public GameObject balaEnemigo;
-	public int healthEnemy = 1;
-	public static int damageEnemy = 1;
+	public static int healthEnemy;
+	public int _healthEnemy = 1;
+	public int _damageEnemy = 1;
+	public static int damageEnemy;
 
 
 	// Use this for initialization
 	void Start () {
-
+		damageEnemy = _damageEnemy;
+		healthEnemy = _healthEnemy;
 	}
 
 

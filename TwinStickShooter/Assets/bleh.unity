@@ -115,7 +115,8 @@ MonoBehaviour:
   bala: {fileID: 969999492}
   rotationInterpolation: 15
   timeBetweenShots: .150000006
-  healthPlayer: 5
+  _healthPlayer: 5
+  _damagePlayer: 1
 --- !u!50 &6764207
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -328,7 +329,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .0199999996
   balaEnemigo: {fileID: 2072386710}
-  healthEnemy: 1
+  _healthEnemy: 10
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &32759555
 Rigidbody2D:
@@ -489,7 +491,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &59665983
 Rigidbody2D:
@@ -948,7 +951,8 @@ MonoBehaviour:
   bala: {fileID: 1627584455}
   rotationInterpolation: 20
   timeBetweenShots: .5
-  healthPlayer: 1
+  _healthPlayer: 1
+  _damagePlayer: 1
 --- !u!50 &168506080
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1109,7 +1113,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &169891589
 Rigidbody2D:
@@ -1588,7 +1593,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &361533106
 Rigidbody2D:
@@ -1864,7 +1870,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &462251126
 Rigidbody2D:
@@ -2164,7 +2171,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &488627630
 Rigidbody2D:
@@ -2448,7 +2456,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &568194751
 Rigidbody2D:
@@ -2660,7 +2669,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &676400988
 Rigidbody2D:
@@ -2820,7 +2830,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &708827206
 Rigidbody2D:
@@ -3053,7 +3064,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &744652982
 Rigidbody2D:
@@ -3213,7 +3225,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &753248143
 Rigidbody2D:
@@ -3464,7 +3477,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .0199999996
   balaEnemigo: {fileID: 2093681774}
-  healthEnemy: 1
+  _healthEnemy: 10
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &898066566
 Rigidbody2D:
@@ -4160,7 +4174,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .0199999996
   balaEnemigo: {fileID: 230945865}
-  healthEnemy: 1
+  _healthEnemy: 10
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &1097542284
 Rigidbody2D:
@@ -4360,7 +4375,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &1150567274
 Rigidbody2D:
@@ -4520,7 +4536,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &1182841255
 Rigidbody2D:
@@ -5012,7 +5029,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &1402531667
 Rigidbody2D:
@@ -5697,7 +5715,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .0199999996
   balaEnemigo: {fileID: 132040579}
-  healthEnemy: 1
+  _healthEnemy: 10
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &1709695530
 Rigidbody2D:
@@ -5845,7 +5864,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &1764825432
 Rigidbody2D:
@@ -6061,7 +6081,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &1797740611
 Rigidbody2D:
@@ -6747,7 +6768,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
-  healthEnemy: 1
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!50 &2063479534
 Rigidbody2D:
@@ -7185,7 +7207,8 @@ MonoBehaviour:
   bala: {fileID: 1839613002}
   rotationInterpolation: 19
   timeBetweenShots: .200000003
-  healthPlayer: 1
+  _healthPlayer: 1
+  _damagePlayer: 1
 --- !u!50 &2102901103
 Rigidbody2D:
   m_ObjectHideFlags: 0

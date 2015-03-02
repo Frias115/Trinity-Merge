@@ -239,7 +239,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .0199999996
   balaEnemigo: {fileID: 176994}
-  healthEnemy: 1
+  _healthEnemy: 10
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!114 &11476994
 MonoBehaviour:

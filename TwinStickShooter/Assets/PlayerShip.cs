@@ -14,13 +14,16 @@ public class PlayerShip : MonoBehaviour {
 	public float rotationInterpolation = 0.5f;
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
-	public int healthPlayer = 1;
-	public static int damagePlayer = 1;
+	public int _healthPlayer = 1;
+	public static int healthPlayer;
+	public int _damagePlayer = 1;
+	public static int damagePlayer;
 
 
 	// Use this for initialization
 	void Start () {
-
+		damagePlayer = _damagePlayer;
+		healthPlayer = _healthPlayer;
 	}
 	
 	// Update is called once per frame

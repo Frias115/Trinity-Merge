@@ -25,7 +25,6 @@ public class Bala : MonoBehaviour {
 			EnemyShip enemy = col.gameObject.GetComponent<EnemyShip> ();
 			if(enemy != null)
 			{
-
 				GameController.AddScore(enemy.score);
 				
 				enemy.Damage(PlayerShip.damagePlayer);
