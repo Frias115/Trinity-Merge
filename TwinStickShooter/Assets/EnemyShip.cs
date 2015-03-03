@@ -17,6 +17,7 @@ public class EnemyShip : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 	}
 
 
@@ -42,6 +43,7 @@ public class EnemyShip : MonoBehaviour {
 	{
 		_healthEnemy -= damage;
 		if (_healthEnemy <= 0) {
+			GameController.AddScore(score);
 			Destroy(this.gameObject);
 		}
 	}
