@@ -13,6 +13,8 @@ public class EnemyShip : MonoBehaviour {
 	public GameObject balaEnemigo;
 	public int _healthEnemy = 1;
 	public int _damageEnemy = 1;
+	public ParticleSystem deathExplosion;
+
 
 
 	// Use this for initialization
@@ -43,8 +45,11 @@ public class EnemyShip : MonoBehaviour {
 	{
 		_healthEnemy -= damage;
 		if (_healthEnemy <= 0) {
-			GameController.AddScore(score);
-			Destroy(this.gameObject);
+			GameController.AddScore (score);
+			deathExplosion.Play();
+			deathExplosion.transform.parent = null;
+			Destroy (this.gameObject);
+			CameraMovement.HitStop();
 		}
 	}
 

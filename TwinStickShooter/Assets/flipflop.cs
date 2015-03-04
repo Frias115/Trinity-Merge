@@ -4,6 +4,7 @@ using System.Collections;
 public class flipflop : EnemyShip {
 	
 	public float rotationSpeed = 100;
+
 	
 	public override void Move(){
 		Vector3 dir = (PlayerShip.playerPosition - transform.position).normalized;
