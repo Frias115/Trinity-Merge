@@ -33,8 +33,5 @@ public class BalaEnemigo : MonoBehaviour {
 	void FixedUpdate () {
 		timer += Time.deltaTime;
 		rigidbody2D.velocity = transform.up *frontalCurve.Evaluate(timer/frontalLoop) *velocidadFrontal + transform.right *lateralCurve.Evaluate(timer/lateralLoop) *velocidadLateral ;
-		if (transform.position.z > 30) {
-			Destroy (this.gameObject);		
-		}
 	}
 }
