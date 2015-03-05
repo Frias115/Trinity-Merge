@@ -25,7 +25,7 @@ public class EnemyShip : MonoBehaviour {
 
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		timer += Time.deltaTime;
 		Move ();
 		Shoot ();
@@ -45,6 +45,10 @@ public class EnemyShip : MonoBehaviour {
 	{
 		_healthEnemy -= damage;
 		if (_healthEnemy <= 0) {
+			CameraMovement.Shake ();
+			CameraMovement.HitStop ();
+			GameController.AddScore(score);
+			Destroy(this.gameObject);
 			GameController.AddScore (score);
 			deathExplosion.Play();
 			deathExplosion.transform.parent = null;
@@ -60,7 +64,7 @@ public class EnemyShip : MonoBehaviour {
 
 	public virtual void Shoot(){
 		shotTimer += Time.deltaTime;
-		if (shotTimer > timeBetweenShots) {
+		if (shotTimer > timeBetweenShots && balaEnemigo != null) {
 			GameObject baladisparada = (GameObject)Instantiate (balaEnemigo, balaEnemigo.transform.position, balaEnemigo.transform.rotation); 
 			baladisparada.SetActive (true);
 			shotTimer = 0;

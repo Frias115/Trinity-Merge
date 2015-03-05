@@ -72,7 +72,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &164818
 GameObject:
   m_ObjectHideFlags: 1
@@ -159,7 +159,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 430402}
@@ -452,6 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc190d87287cd754984c57facfec2cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -497,6 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc190d87287cd754984c57facfec2cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -551,6 +553,7 @@ MonoBehaviour:
   bala: {fileID: 149474}
   rotationInterpolation: 20
   timeBetweenShots: .5
+  _healthPlayer: 1
 --- !u!114 &11464822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -562,6 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc190d87287cd754984c57facfec2cd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   frontalCurve:
     serializedVersion: 2
     m_Curve:
