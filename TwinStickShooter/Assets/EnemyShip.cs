@@ -11,6 +11,7 @@ public class EnemyShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	static float shotTimer = 0;
 	public GameObject balaEnemigo;
+	public GameObject explosionEnemigo;
 	public int _healthEnemy = 1;
 	public int _damageEnemy = 1;
 	public ParticleSystem deathExplosion;
@@ -48,6 +49,7 @@ public class EnemyShip : MonoBehaviour {
 			CameraMovement.Shake ();
 			CameraMovement.HitStop ();
 			GameController.AddScore(score);
+			Explode ();
 			//deathExplosion.Play();
 			//deathExplosion.transform.parent = null;
 			Destroy (this.gameObject);
@@ -55,7 +57,10 @@ public class EnemyShip : MonoBehaviour {
 	}
 
 	public virtual void Explode(){
-
+		if (explosionEnemigo != null) {
+			explosionEnemigo.SetActive (true);
+			explosionEnemigo.transform.parent = null;
+		}
 	}
 
 

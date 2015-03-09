@@ -11,18 +11,4 @@ public class follower : EnemyShip {
 		transform.rotation = Quaternion.Slerp (transform.rotation,rot, rotationSpeed*Time.deltaTime);
 		base.Move ();
 	}
-
-	public override void Damage(int damage)
-	{
-		_healthEnemy -= damage;
-		if (_healthEnemy <= 0) {
-			CameraMovement.Shake ();
-			CameraMovement.HitStop ();
-			GameController.AddScore(score);
-			Explode();
-			//deathExplosion.Play();
-			//deathExplosion.transform.parent = null;
-			Destroy (this.gameObject);
-		}
-	}
 }
