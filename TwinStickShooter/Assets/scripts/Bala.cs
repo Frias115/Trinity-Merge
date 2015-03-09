@@ -9,9 +9,11 @@ public class Bala : MonoBehaviour {
 	}
 
 
-	public int damage;
+	public int damage = 1;
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
+	public int _healthBullet = 1;
+	public ParticleSystem deathExplosion;
 	
 	
 	public float velocidadFrontal, velocidadLateral;
@@ -28,8 +30,20 @@ public class Bala : MonoBehaviour {
 			{
 				enemy.Damage(damage);
 			}
-			Destroy(this.gameObject);
+			Explode ();
 		}
+
+	
+	public void Explode()
+	{
+		if (deathExplosion != null) {
+			deathExplosion.Play();
+			deathExplosion.transform.parent = null;
+		}
+		Destroy(this.gameObject);
+	}
+	
+
 
 
 	void FixedUpdate () {
