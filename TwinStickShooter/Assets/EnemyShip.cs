@@ -54,6 +54,11 @@ public class EnemyShip : MonoBehaviour {
 		}
 	}
 
+	public virtual void Explode(){
+
+	}
+
+
 
 	public virtual void Move(){
 		rigidbody2D.velocity = transform.up *frontalCurve.Evaluate(timer/frontalLoop) *velocidadFrontal + transform.right *lateralCurve.Evaluate(timer/lateralLoop) *velocidadLateral ;
