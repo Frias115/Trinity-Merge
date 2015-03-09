@@ -50,8 +50,10 @@ public class EnemyShip : MonoBehaviour {
 			CameraMovement.HitStop ();
 			GameController.AddScore(score);
 			Explode ();
-			//deathExplosion.Play();
-			//deathExplosion.transform.parent = null;
+			if(deathExplosion != null){
+				deathExplosion.Play();
+				deathExplosion.transform.parent = null;
+			}
 			Destroy (this.gameObject);
 		}
 	}
