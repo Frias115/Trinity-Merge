@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class BackgroundAnimations : MonoBehaviour {
+
 	private float contador;
+
+	public Transform target;
+
 	public int intervalo;
 	public int rotationSpeed;
 	public int scalationSpeed;
@@ -18,10 +22,13 @@ public class BackgroundAnimations : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate (Vector2.right * Time.deltaTime*rotationSpeed);
+		//transform.Rotate (Vector2.right * Time.deltaTime*rotationSpeed);
 		//transform.position += -Vector3.up * Time.deltaTime * verticalSpeed;
+		transform.LookAt(target);
 	}
 }
 
+//Tu sabes que pasa cuando viene el coco?
+//Tu sabes???
 
 
