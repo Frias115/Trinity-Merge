@@ -7,24 +7,33 @@ public class BackgroundAnimations : MonoBehaviour {
 
 	public Transform target;
 
-	public int intervalo;
-	public int rotationSpeed;
-	public int scalationSpeed;
-	public int translationSpeed;
+	public float intervalo;
+	public float rotationSpeed;
+	public float scalationSpeed;
+	public float translationSpeed;
 	public float verticalSpeed;
 	public AnimationCurve rotation;
 	public AnimationCurve scalation;
 	public AnimationCurve translation;
+	public bool lookAttarget;
+
+	Transform myTransform;
+	Vector3 originalScale;
 	// Use this for initialization
 	void Start () {
-		contador += Time.deltaTime;
+		myTransform = transform;
+		originalScale = myTransform.localScale;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		contador += Time.deltaTime;
 		//transform.Rotate (Vector2.right * Time.deltaTime*rotationSpeed);
 		//transform.position += -Vector3.up * Time.deltaTime * verticalSpeed;
-		transform.LookAt(target);
+		if(lookAttarget)
+			transform.LookAt(target);
+		if(scalationSpeed > 0)
+			myTransform.localScale = originalScale * scalation.Evaluate (contador/scalationSpeed);
 	}
 }
 
