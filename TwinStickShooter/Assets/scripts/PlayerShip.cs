@@ -17,6 +17,7 @@ public class PlayerShip : MonoBehaviour {
 	public int _healthPlayer = 1;
 	public int _damagePlayer = 1;
 	public ParticleSystem deathExplosion; 
+	public ParticleSystem shootParticle;
 
 
 	// Use this for initialization
@@ -52,6 +53,7 @@ public class PlayerShip : MonoBehaviour {
 		if (firingDirection.magnitude >= 0.5f && shotTimer >= timeBetweenShots) {
 			GameObject baladisparada = (GameObject)Instantiate (bala, bala.transform.position, bala.transform.rotation); 
 			baladisparada.SetActive (true);
+			shootParticle.Play ();
 			while(shotTimer >= timeBetweenShots)
 				shotTimer -= timeBetweenShots;
 		}

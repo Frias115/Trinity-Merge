@@ -9,11 +9,12 @@ public class Bala : MonoBehaviour {
 	}
 
 
-	public int damage = 1;
+	public int damage;
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
 	public int _healthBullet = 1;
 	public ParticleSystem deathExplosion;
+
 	
 	
 	public float velocidadFrontal, velocidadLateral;

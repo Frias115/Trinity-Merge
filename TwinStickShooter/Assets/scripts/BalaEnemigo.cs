@@ -9,10 +9,11 @@ public class BalaEnemigo : MonoBehaviour {
 	}
 
 	public int damage;
-
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
 	public float velocidadFrontal, velocidadLateral;
+	public int _healthEnemyBullet = 1;
+	public ParticleSystem deathExplosion;
 	
 	float timer = 0;
 	
@@ -24,9 +25,18 @@ public class BalaEnemigo : MonoBehaviour {
 		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
 		if(player != null)
 		{
-			player.Damage(this.damage);
+			player.Damage(damage);
 		}
-		Destroy(gameObject);
+		Explode ();
+	}
+
+	public void Explode()
+	{
+		if (deathExplosion != null) {
+			deathExplosion.Play();
+			deathExplosion.transform.parent = null;
+		}
+		Destroy(this.gameObject);
 	}
 	
 	
