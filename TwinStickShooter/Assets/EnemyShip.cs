@@ -54,6 +54,7 @@ public class EnemyShip : MonoBehaviour {
 				deathExplosion.Play();
 				deathExplosion.transform.parent = null;
 			}
+			SpawnController.enemigosRestantes--;
 			Destroy (this.gameObject);
 		}
 	}
