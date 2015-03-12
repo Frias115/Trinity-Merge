@@ -2826,6 +2826,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11494928, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
+      propertyPath: _damageEnemy
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f5206d847c0974488c58f1da6af77d3, type: 2}
   m_RootGameObject: {fileID: 753248141}
@@ -4155,8 +4159,9 @@ MonoBehaviour:
   - {fileID: 1009886490}
   - {fileID: 1009886490}
   - {fileID: 2064578749}
-  - {fileID: 1009886490}
   - {fileID: 2064578749}
+  - {fileID: 1009886490}
+  - {fileID: 1009886490}
   waitTime: 5
 --- !u!1 &761036085
 GameObject:
@@ -5306,7 +5311,7 @@ MonoBehaviour:
   balaEnemigo: {fileID: 0}
   explosionEnemigo: {fileID: 0}
   _healthEnemy: 2
-  _damageEnemy: 1000
+  _damageEnemy: 1
   deathExplosion: {fileID: 0}
   rotationSpeed: 100
 --- !u!50 &1085144835
@@ -9071,7 +9076,7 @@ MonoBehaviour:
   balaEnemigo: {fileID: 0}
   explosionEnemigo: {fileID: 1748070551}
   _healthEnemy: 2
-  _damageEnemy: 1000
+  _damageEnemy: 1
   deathExplosion: {fileID: 0}
   rotationSpeed: 100
 --- !u!50 &1797740611

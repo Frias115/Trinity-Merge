@@ -1575,7 +1575,7 @@ MonoBehaviour:
   balaEnemigo: {fileID: 0}
   explosionEnemigo: {fileID: 189852}
   _healthEnemy: 2
-  _damageEnemy: 1000
+  _damageEnemy: 1
   deathExplosion: {fileID: 0}
   rotationSpeed: 100
 --- !u!114 &11489852
