@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2336662}
   - 114: {fileID: 11436662}
   - 114: {fileID: 11436664}
+  - 114: {fileID: 11478082}
   m_Layer: 14
   m_Name: Cube_LookAt
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -248, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -168,7 +169,30 @@ MonoBehaviour:
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
-  lookAttarget: 0
+  lookAttarget: 1
+--- !u!114 &11478082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768ea60e607be80499e6a42c493b1612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: .848275661, a: 0}
+  - {r: .241379261, g: 0, b: 1, a: 0}
+  - {r: 0, g: .5448277, b: 1, a: 0}
+  - {r: 0, g: .958620548, b: 1, a: 0}
+  - {r: 0, g: 1, b: .131034613, a: 0}
+  - {r: 1, g: .972413778, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0, g: .5448277, b: 1, a: 0}
+  - {r: 0, g: .352941155, b: .00243405718, a: 0}
+  tiempoDeCadaColor: .5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
