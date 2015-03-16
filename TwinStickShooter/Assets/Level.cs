@@ -37,10 +37,10 @@ public class Level : MonoBehaviour {
 		Vector2[] points =  new Vector2[pointArray.Length + 1];
 		for (int i = 0; i < pointArray.Length; i++) {
 			line.SetPosition (i,pointArray[i].position);
-			points[i] = new Vector2(pointArray[i].position.x,pointArray[i].position.y);
+			points[i] = new Vector2(pointArray[i].localPosition.x,pointArray[i].localPosition.y);
 		}
 		line.SetPosition (pointArray.Length, pointArray [0].position);
-		points[pointArray.Length] = new Vector2(pointArray[0].position.x,pointArray[0].position.y);
+		points[pointArray.Length] = new Vector2(pointArray[0].localPosition.x,pointArray[0].localPosition.y);
 		colliderEdge.points = points;
 	}
 
@@ -49,10 +49,10 @@ public class Level : MonoBehaviour {
 		Vector2[] points =  new Vector2[pointArray.Length + 1];
 		for (int i = 0; i < pointArray.Length; i++) {
 			line.SetPosition (i,pointArray[i].position);	
-			points[i] = new Vector2(pointArray[i].position.x,pointArray[i].position.y);
+			points[i] = new Vector2(pointArray[i].localPosition.x,pointArray[i].localPosition.y);
 		}
 		line.SetPosition (pointArray.Length, pointArray [0].position);
-		points[pointArray.Length] = new Vector2(pointArray[0].position.x,pointArray[0].position.y);
+		points[pointArray.Length] = new Vector2(pointArray[0].localPosition.x,pointArray[0].localPosition.y);
 		colliderEdge.points = points;
 	}
 }

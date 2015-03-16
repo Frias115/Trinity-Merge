@@ -169,7 +169,7 @@ MonoBehaviour:
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
-  lookAttarget: 1
+  lookAttarget: 0
 --- !u!114 &11478082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,16 +182,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colors:
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 1, g: 0, b: .848275661, a: 0}
-  - {r: .241379261, g: 0, b: 1, a: 0}
-  - {r: 0, g: .5448277, b: 1, a: 0}
-  - {r: 0, g: .958620548, b: 1, a: 0}
-  - {r: 0, g: 1, b: .131034613, a: 0}
-  - {r: 1, g: .972413778, b: 0, a: 0}
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 0, g: .5448277, b: 1, a: 0}
-  - {r: 0, g: .352941155, b: .00243405718, a: 0}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0, b: .848275661, a: 1}
+  - {r: .241379261, g: 0, b: 1, a: 1}
+  - {r: 0, g: .5448277, b: 1, a: 1}
+  - {r: 0, g: .958620548, b: 1, a: 1}
+  - {r: 0, g: 1, b: .131034613, a: 1}
+  - {r: 1, g: .972413778, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: .5448277, b: 1, a: 1}
+  - {r: 0, g: .352941155, b: .00243405718, a: 1}
   tiempoDeCadaColor: .5
 --- !u!1001 &100100000
 Prefab:

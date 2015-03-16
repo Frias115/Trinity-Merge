@@ -31,7 +31,7 @@ public class BackgroundAnimations : MonoBehaviour {
 		//transform.Rotate (Vector2.right * Time.deltaTime*rotationSpeed);
 		//transform.position += -Vector3.up * Time.deltaTime * verticalSpeed;
 		if(lookAttarget)
-			transform.LookAt(target);
+			myTransform.LookAt(target);
 		if(scalationSpeed > 0)
 			myTransform.localScale = originalScale * scalation.Evaluate (contador/scalationSpeed);
 	}
