@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &455804
 Transform:
   m_ObjectHideFlags: 1
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a4b2b03a77a244bba36a55dcfd6065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -152,6 +153,8 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
+  _healthEnemy: 1
+  _damageEnemy: 1
   rotationSpeed: 100
 --- !u!1001 &100100000
 Prefab:

@@ -12,6 +12,5 @@ public class flipflop : EnemyShip {
 		transform.rotation = Quaternion.Slerp (transform.rotation,rot, rotationSpeed*Time.deltaTime);
 
 		base.Move ();
-		base.Shoot ();
 	}
 }

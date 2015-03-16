@@ -11,6 +11,7 @@ public class EnemyShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	static float shotTimer = 0;
 	public GameObject balaEnemigo;
+	public GameObject explosionEnemigo;
 	public int _healthEnemy = 1;
 	public int _damageEnemy = 1;
 	public ParticleSystem deathExplosion;
@@ -25,7 +26,7 @@ public class EnemyShip : MonoBehaviour {
 
 
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		timer += Time.deltaTime;
 		Move ();
 		Shoot ();
@@ -45,13 +46,25 @@ public class EnemyShip : MonoBehaviour {
 	{
 		_healthEnemy -= damage;
 		if (_healthEnemy <= 0) {
-			GameController.AddScore (score);
-			deathExplosion.Play();
-			deathExplosion.transform.parent = null;
+			CameraMovement.Shake ();
+			CameraMovement.HitStop ();
+			GameController.AddScore(score);
+			Explode ();
+			if(deathExplosion != null){
+				deathExplosion.Play();
+				deathExplosion.transform.parent = null;
+			}
 			Destroy (this.gameObject);
-			CameraMovement.HitStop();
 		}
 	}
+
+	public virtual void Explode(){
+		if (explosionEnemigo != null) {
+			explosionEnemigo.SetActive (true);
+			explosionEnemigo.transform.parent = null;
+		}
+	}
+
 
 
 	public virtual void Move(){
@@ -60,7 +73,7 @@ public class EnemyShip : MonoBehaviour {
 
 	public virtual void Shoot(){
 		shotTimer += Time.deltaTime;
-		if (shotTimer > timeBetweenShots) {
+		if (shotTimer > timeBetweenShots && balaEnemigo != null) {
 			GameObject baladisparada = (GameObject)Instantiate (balaEnemigo, balaEnemigo.transform.position, balaEnemigo.transform.rotation); 
 			baladisparada.SetActive (true);
 			shotTimer = 0;
