@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 412872}
   - 198: {fileID: 19812872}
   - 199: {fileID: 19912872}
-  - 114: {fileID: 11493138}
+  - 114: {fileID: 11459764}
   m_Layer: 11
   m_Name: Particle System
   m_TagString: Untagged
@@ -216,6 +216,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f895e89dbd1f884cbbc10240d2fa143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11459764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f895e89dbd1f884cbbc10240d2fa143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11476992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,17 +347,6 @@ MonoBehaviour:
   velocidadLateral: 30
   _healthEnemyBullet: 1
   deathExplosion: {fileID: 19893138}
---- !u!114 &11493138
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 112872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f895e89dbd1f884cbbc10240d2fa143, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &19812872
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1545,10 +1545,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4294960069
+        rgba: 4294960078
       maxColor:
         serializedVersion: 2
-        rgba: 4294935026
+        rgba: 4294935021
       minMaxState: 2
     startSize:
       scalar: .5
@@ -1658,7 +1658,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
       minMaxState: 0
-    cnt0: 20
+    cnt0: 5
     cnt1: 30
     cnt2: 30
     cnt3: 30

@@ -1,43 +1,43 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &113194
+--- !u!1 &156246
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 413194}
-  - 33: {fileID: 3313194}
-  - 23: {fileID: 2313194}
-  - 61: {fileID: 6113194}
-  - 50: {fileID: 5013194}
-  - 114: {fileID: 11413194}
+  - 4: {fileID: 456246}
+  - 33: {fileID: 3356246}
+  - 23: {fileID: 2356246}
+  - 61: {fileID: 6156246}
+  - 50: {fileID: 5056246}
+  - 114: {fileID: 11456246}
   m_Layer: 10
-  m_Name: Follower
+  m_Name: Runner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &413194
+--- !u!4 &456246
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113194}
+  m_GameObject: {fileID: 156246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.3999996, y: 11.3999996, z: 0}
+  m_LocalPosition: {x: -32.0999985, y: -13.1999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2313194
+--- !u!23 &2356246
 Renderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113194}
+  m_GameObject: {fileID: 156246}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -52,19 +52,19 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3313194
+--- !u!33 &3356246
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113194}
+  m_GameObject: {fileID: 156246}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!50 &5013194
+--- !u!50 &5056246
 Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113194}
+  m_GameObject: {fileID: 156246}
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
@@ -74,28 +74,29 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6113194
+--- !u!61 &6156246
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113194}
+  m_GameObject: {fileID: 156246}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
---- !u!114 &11413194
+--- !u!114 &11456246
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 113194}
+  m_GameObject: {fileID: 156246}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16a4b2b03a77a244bba36a55dcfd6065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -148,10 +149,13 @@ MonoBehaviour:
     m_PostInfinity: 1
   frontalLoop: 1
   lateralLoop: .5
-  velocidadFrontal: 10
+  velocidadFrontal: 15
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 0}
+  _healthEnemy: 2
+  _damageEnemy: 1000
+  deathExplosion: {fileID: 0}
   rotationSpeed: 100
 --- !u!1001 &100100000
 Prefab:
@@ -162,6 +166,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 113194}
+  m_RootGameObject: {fileID: 156246}
   m_IsPrefabParent: 1
   m_IsExploded: 1
