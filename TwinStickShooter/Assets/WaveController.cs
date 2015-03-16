@@ -21,13 +21,11 @@ public class WaveController : MonoBehaviour {
 			spawnTimer +=  Time.deltaTime;
 			if(spawnTimer > waitTime){
 				Destroy (activeWave);
-				//waves [numberWave].SetActive (false);
 				numberWave++;
-				Debug.Log(numberWave);
-				activeWave = Instantiate (waves[numberWave]) as GameObject;
-				Debug.Log(activeWave);
-				activeWave.SetActive (true);
-				//waves [numberWave].SetActive (true);
+				if (numberWave < waves.Length){
+					activeWave = Instantiate (waves[numberWave]) as GameObject;
+					activeWave.SetActive (true);
+				}
 				spawnTimer = 0;
 			}
 			

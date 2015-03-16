@@ -9,7 +9,7 @@ public class EnemyShip : MonoBehaviour {
 	public float velocidadFrontal, velocidadLateral;
 	protected float timer = 0;
 	public float timeBetweenShots = 0.5f;
-	static float shotTimer = 0;
+	 float shotTimer = 0;
 	public GameObject balaEnemigo;
 	public GameObject explosionEnemigo;
 	public int _healthEnemy = 1;

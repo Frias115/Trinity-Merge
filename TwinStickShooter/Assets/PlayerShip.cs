@@ -69,7 +69,6 @@ public class PlayerShip : MonoBehaviour {
 		}
 	}
 
-
 	
 	void Update(){
 		Vector2 firingDirection = Vector2.right * GameInput.ejeXDisparo + Vector2.up * GameInput.ejeYDisparo;

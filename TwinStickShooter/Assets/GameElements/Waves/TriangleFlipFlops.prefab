@@ -60,7 +60,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &179190
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
   - {fileID: 479182}
   - {fileID: 479202}
   - {fileID: 479194}
-  Enemy: {fileID: 128388, guid: 1c027d616110e26438e872f90726651d, type: 2}
+  Enemy: {fileID: 190844, guid: addaa05cec4fc8c44b5778e139ae7cae, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
