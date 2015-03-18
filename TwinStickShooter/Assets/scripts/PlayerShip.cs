@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class PlayerShip : MonoBehaviour {
@@ -15,15 +15,14 @@ public class PlayerShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
 	public int _healthPlayer = 1;
-	public int _damagePlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
+
 
 
 	// Use this for initialization
 	void Start () {
 	}
-
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -63,17 +62,7 @@ public class PlayerShip : MonoBehaviour {
 
 	}
 
-
-	void OnCollisionEnter2D (Collision2D col)
-	{
-		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
-		if(player != null)
-		{
-			player.Damage(this._damagePlayer);
-			Destroy(gameObject);
-		}
-	}
-		
+	
 	public void Damage(int damage)
 	{
 		_healthPlayer -= damage;
@@ -85,10 +74,6 @@ public class PlayerShip : MonoBehaviour {
 			Destroy(this.gameObject);
 		}
 	}
-
-	
-
-
 
 	
 	void Update(){
