@@ -1,18 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &177112
+--- !u!1 &125328
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 477112}
-  - 20: {fileID: 2077112}
-  - 92: {fileID: 9277112}
-  - 124: {fileID: 12477112}
-  - 81: {fileID: 8177112}
-  - 114: {fileID: 11477112}
+  - 4: {fileID: 425328}
+  - 20: {fileID: 2025328}
+  - 92: {fileID: 9225328}
+  - 124: {fileID: 12425328}
+  - 81: {fileID: 8125328}
+  - 114: {fileID: 11425328}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -20,28 +20,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &477112
+--- !u!4 &425328
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177112}
+  m_GameObject: {fileID: 125328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -26.3999996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!20 &2077112
+--- !u!20 &2025328
 Camera:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177112}
+  m_GameObject: {fileID: 125328}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .858182132, g: .425605536, b: .904411793, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -64,26 +64,26 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
---- !u!81 &8177112
+--- !u!81 &8125328
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177112}
+  m_GameObject: {fileID: 125328}
   m_Enabled: 1
---- !u!92 &9277112
+--- !u!92 &9225328
 Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177112}
+  m_GameObject: {fileID: 125328}
   m_Enabled: 1
---- !u!114 &11477112
+--- !u!114 &11425328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177112}
+  m_GameObject: {fileID: 125328}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83e44d34aecac58448f931cf4d3fbab2, type: 3}
@@ -95,12 +95,12 @@ MonoBehaviour:
   shakeTime: .300000012
   slowDown: .100000001
   slowDownTime: .00999999978
---- !u!124 &12477112
+--- !u!124 &12425328
 Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 177112}
+  m_GameObject: {fileID: 125328}
   m_Enabled: 1
 --- !u!1001 &100100000
 Prefab:
@@ -111,6 +111,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 177112}
+  m_RootGameObject: {fileID: 125328}
   m_IsPrefabParent: 1
   m_IsExploded: 1

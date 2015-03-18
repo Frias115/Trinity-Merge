@@ -169,7 +169,7 @@ MonoBehaviour:
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
-  lookAttarget: 0
+  lookAttarget: 1
 --- !u!114 &11478082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -192,7 +192,7 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 0, g: .5448277, b: 1, a: 1}
   - {r: 0, g: .352941155, b: .00243405718, a: 1}
-  tiempoDeCadaColor: .5
+  tiempoDeCadaColor: .330000013
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
