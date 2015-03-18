@@ -13,6 +13,9 @@ public class Level : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (line == null) {
+			line = GetComponent<LineRenderer>();		
+		}
 		CreateMap();
 	}
 	

@@ -5,25 +5,33 @@ public class MovimientoDeUnLadoAOtro : MonoBehaviour {
 
 
 	public Vector3 pointB;
+	Vector3 pointA;
+	public float velocidadDeMovimiento;
+	public float TiempoDeMovimiento;
 	
-	IEnumerator Start()
+	void Start()
 	{
-		var pointA = transform.position;
-		while (true) {
-			yield return StartCoroutine(MoveObject(transform, pointA, pointB, 3.0f));
-			yield return StartCoroutine(MoveObject(transform, pointB, pointA, 3.0f));
-		}
+		pointA = transform.position;
 	}
-	
-	IEnumerator MoveObject(Transform thisTransform, Vector3 startPos, Vector3 endPos, float time)
-	{
-		var i= 0.0f;
-		var rate= 1.0f/time;
-		while (i < 1.0f) {
-			i += Time.deltaTime * rate;
-			thisTransform.position = Vector3.Lerp(startPos, endPos, i);
-			yield return null; 
+
+	float timer;
+	bool backwards = false;
+
+	void Update () {
+		if (backwards) {
+				timer -= Time.deltaTime;
+				if (timer < 0) {
+						timer = 0;
+						backwards = false;
+				}
+		} else {
+				timer += Time.deltaTime;
+				if (timer > TiempoDeMovimiento) {
+						timer = TiempoDeMovimiento;
+						backwards = true;
+				}
 		}
+		transform.position = Vector3.Lerp (pointA, pointB, timer/TiempoDeMovimiento);
 	}
 
 
@@ -42,9 +50,6 @@ public class MovimientoDeUnLadoAOtro : MonoBehaviour {
 
 
 
-//public float velocidadDeMovimiento;
-//public float TiempoDeMovimiento;
-//bool onPlay;
 
 // Use this for initialization
 //void Start () {
