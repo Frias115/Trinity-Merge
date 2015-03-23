@@ -3,15 +3,15 @@ using System.Collections;
 
 public class MovimientoDeUnLadoAOtro : MonoBehaviour {
 
-
-	public Vector3 pointB;
+	public Transform pointToGoTo;
+	 Vector3 pointB;
 	Vector3 pointA;
 	public float velocidadDeMovimiento;
 	public float TiempoDeMovimiento;
 	
 	void Start()
 	{
-		pointA = transform.position;
+		pointA = transform.localPosition;
 	}
 
 	float timer;
@@ -31,7 +31,7 @@ public class MovimientoDeUnLadoAOtro : MonoBehaviour {
 						backwards = true;
 				}
 		}
-		transform.position = Vector3.Lerp (pointA, pointB, timer/TiempoDeMovimiento);
+		transform.localPosition = Vector3.Lerp (pointA, pointToGoTo.localPosition, timer/TiempoDeMovimiento);
 	}
 
 
