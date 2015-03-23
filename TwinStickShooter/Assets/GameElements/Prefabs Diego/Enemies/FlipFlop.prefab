@@ -295,6 +295,7 @@ MonoBehaviour:
   velocidadLateral: 0
   timeBetweenShots: .5
   balaEnemigo: {fileID: 176994}
+  explosionEnemigo: {fileID: 0}
   _healthEnemy: 5
   _damageEnemy: 1
   deathExplosion: {fileID: 19812872}

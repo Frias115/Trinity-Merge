@@ -18,6 +18,14 @@ public class PlayerShip : MonoBehaviour {
 	public int _damagePlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
+	public AudioSource source;
+	public AudioClip shotSound;
+
+
+	public void PlaySound (AudioClip c) {
+		source.PlayOneShot (c);
+
+		}
 
 
 	// Use this for initialization
@@ -52,8 +60,10 @@ public class PlayerShip : MonoBehaviour {
 		Vector2 firingDirection = Vector2.right*GameInput.ejeXDisparo + Vector2.up*GameInput.ejeYDisparo;
 		if (firingDirection.magnitude >= 0.5f && shotTimer >= timeBetweenShots) {
 			GameObject baladisparada = (GameObject)Instantiate (bala, bala.transform.position, bala.transform.rotation); 
+			baladisparada.transform.parent = null;
 			baladisparada.SetActive (true);
 			shootParticle.Play ();
+			PlaySound (shotSound);
 			while(shotTimer >= timeBetweenShots)
 				shotTimer -= timeBetweenShots;
 		}
