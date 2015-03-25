@@ -9,7 +9,9 @@ public class EnemyShip : MonoBehaviour {
 	public float velocidadFrontal, velocidadLateral;
 	protected float timer = 0;
 	public float timeBetweenShots = 0.5f;
-	 float shotTimer = 0;
+	public float timeBetweenDash = 1.5f;
+	protected float shotTimer = 0;
+	protected float dashTimer = 0;
 	public GameObject balaEnemigo;
 	public GameObject explosionEnemigo;
 	public int _healthEnemy = 1;
@@ -30,6 +32,7 @@ public class EnemyShip : MonoBehaviour {
 		timer += Time.deltaTime;
 		Move ();
 		Shoot ();
+		Dash ();
 	}
 
 	void OnCollisionEnter2D (Collision2D col)
@@ -66,6 +69,10 @@ public class EnemyShip : MonoBehaviour {
 		}
 	}
 
+	public virtual void Dash()
+	{
+
+	}
 
 
 	public virtual void Move(){
