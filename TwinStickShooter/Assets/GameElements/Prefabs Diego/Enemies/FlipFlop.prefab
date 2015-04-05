@@ -519,11 +519,11 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4294945734
       maxColor:
         serializedVersion: 2
-        rgba: 2468240127
-      minMaxState: 0
+        rgba: 2480145145
+      minMaxState: 2
     startSize:
       scalar: 1
       maxCurve:
