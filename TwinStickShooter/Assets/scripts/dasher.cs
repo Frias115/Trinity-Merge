@@ -11,14 +11,18 @@ public class dasher : EnemyShip {
 
 	public override void Dash()
 	{
-		do {
+		if (dashTimer < timeBetweenDash) {
 			dashTimer += Time.deltaTime;
 			Vector3 dir = (PlayerShip.playerPosition - transform.position).normalized;
 			Quaternion rot = Quaternion.LookRotation (Vector3.forward, dir);
 			transform.rotation = Quaternion.Slerp (transform.rotation, rot, rotationSpeed * Time.deltaTime);
-			rigidbody2D.velocity = transform.up * frontalCurve.Evaluate (timer / frontalLoop) * velocidadFrontal + transform.right * lateralCurve.Evaluate (timer / lateralLoop) * velocidadLateral;
-		} while(dashTimer < timeBetweenDash);
-		dashTimer = 0;
+			rigidbody2D.velocity = Vector2.zero;
+		} else if (dashTimer > timeBetweenDash + timeInDash) {
+			dashTimer = 0;
+		} else {dashTimer += Time.deltaTime;
+			rigidbody2D.velocity = transform.up * frontalCurve.Evaluate ((dashTimer - timeBetweenDash)/ timeInDash) * velocidadFrontal + transform.right * lateralCurve.Evaluate (timer / lateralLoop) * velocidadLateral;
+
+		}
 	}
 
 }

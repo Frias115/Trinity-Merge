@@ -161,7 +161,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -204,6 +204,36 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .0206497125
+      value: -.999292254
+      inSlope: -.0080886092
+      outSlope: -.0080886092
+      tangentMode: 0
+    - time: .0599999987
+      value: 1
+      inSlope: -.0149387056
+      outSlope: -.0149387056
+      tangentMode: 0
+    - time: .099999994
+      value: -1
+      inSlope: -.0127945933
+      outSlope: -.0127945933
+      tangentMode: 0
+    - time: .140000001
+      value: 1
+      inSlope: .0263529196
+      outSlope: .0263529196
+      tangentMode: 0
+    - time: .170000002
+      value: -1
+      inSlope: -.000440049917
+      outSlope: -.000440049917
+      tangentMode: 0
+    - time: .229999989
       value: 1
       inSlope: 0
       outSlope: 0
@@ -250,17 +280,19 @@ MonoBehaviour:
       tangentMode: 31
     m_PreInfinity: 2
     m_PostInfinity: 1
-  frontalLoop: 1
+  frontalLoop: .5
   lateralLoop: .5
-  velocidadFrontal: 15
+  velocidadFrontal: 60
   velocidadLateral: 0
-  timeBetweenShots: .5
-  timeBetweenDash: 1.5
+  timeBetweenShots: 0
+  timeInDash: .5
+  timeBetweenDash: 1
   balaEnemigo: {fileID: 0}
   explosionEnemigo: {fileID: 0}
-  _healthEnemy: 2
-  _damageEnemy: 1000
+  healthEnemy: 1
+  damageEnemy: 1
   deathExplosion: {fileID: 19816078}
+  hijos: []
   rotationSpeed: 100
 --- !u!114 &11416080
 MonoBehaviour:
