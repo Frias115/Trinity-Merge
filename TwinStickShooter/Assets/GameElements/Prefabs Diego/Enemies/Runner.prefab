@@ -100,7 +100,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -371,10 +371,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
       minColor:
         serializedVersion: 2
-        rgba: 4285624831
+        rgba: 4280588543
       maxColor:
         serializedVersion: 2
-        rgba: 2466251007
+        rgba: 2467548927
       minMaxState: 2
     startSize:
       scalar: 1
