@@ -13,7 +13,6 @@ GameObject:
   - 124: {fileID: 12425328}
   - 81: {fileID: 8125328}
   - 114: {fileID: 11425328}
-  - 114: {fileID: 11489890}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -41,8 +40,8 @@ Camera:
   m_GameObject: {fileID: 125328}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: .286274523, g: .701960802, b: .949019611, a: 1}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -96,23 +95,6 @@ MonoBehaviour:
   shakeTime: .300000012
   slowDown: .100000001
   slowDownTime: .00999999978
---- !u!114 &11489890
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 768ea60e607be80499e6a42c493b1612, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colors:
-  - {r: 0, g: 1, b: 1, a: 0}
-  - {r: 0, g: .801470578, b: .768306136, a: 0}
-  - {r: 0, g: .661764741, b: .661764741, a: 0}
-  - {r: .00989404041, g: .448529422, b: .448529422, a: 0}
-  tiempoDeCadaColor: 2
 --- !u!124 &12425328
 Behaviour:
   m_ObjectHideFlags: 1

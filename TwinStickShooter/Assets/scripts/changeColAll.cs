@@ -14,8 +14,7 @@ public class changeColAll : MonoBehaviour {
 	public float tiempoDeCadaColor;
 	// Use this for initialization
 	void Start () {
-		nextUsage = Time.time + tiempoDeCadaColor;
-		firstUsage = nextUsage / 2;
+		nextUsage = 0;
 	}
 	
 	// Update is called once per frame
@@ -27,14 +26,24 @@ public class changeColAll : MonoBehaviour {
 //		} else {nextUsage = Time.time + tiempoDeCadaColor;
 //			gameObject.renderer.material.color = Color.Lerp (color2, color1, lerpTime);}
 
-		if (Time.time > firstUsage) {
-			gameObject.renderer.material.color = Color.Lerp (color1, color2, lerpTime);
-		} else if (Time.time > nextUsage){
-			nextUsage = Time.time + tiempoDeCadaColor;
-			firstUsage = nextUsage/2;
-			gameObject.renderer.material.color = Color.Lerp (color2, color1, lerpTime);}
+		nextUsage += Time.deltaTime;
+		if (nextUsage > tiempoDeCadaColor) {
+			float transitionTime = nextUsage - tiempoDeCadaColor;
+			if(transitionTime > lerpTime){
+				nextUsage = transitionTime - lerpTime;
+				Color c = color1;
+				color1 = color2;
+				color2 = c;
+				foreach(Renderer r in this.GetComponentsInChildren<Renderer>()){
+					r.material.color = c;
+				}
+			}else{
+				foreach(Renderer r in this.GetComponentsInChildren<Renderer>()){
+					r.material.color = Color.Lerp (color2, color1, transitionTime/lerpTime);
+				}
+			}
 		}
 	}
 	
 	
-//}
+}
