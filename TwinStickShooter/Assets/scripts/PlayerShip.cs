@@ -14,7 +14,7 @@ public class PlayerShip : MonoBehaviour {
 	public float rotationInterpolation = 0.5f;
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
-	public int _healthPlayer = 1;
+	public int healthPlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
 
@@ -65,10 +65,10 @@ public class PlayerShip : MonoBehaviour {
 	
 	public void Damage(int damage)
 	{
-		_healthPlayer -= damage;
+		healthPlayer -= damage;
 		CameraMovement.Shake ();
 		CameraMovement.HitStop ();
-		if (_healthPlayer <= 0) {
+		if (healthPlayer <= 0) {
 			deathExplosion.Play();
 			deathExplosion.transform.parent = null;
 			Destroy(this.gameObject);
