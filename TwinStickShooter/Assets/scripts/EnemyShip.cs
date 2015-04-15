@@ -61,6 +61,7 @@ public class EnemyShip : MonoBehaviour {
 		if (healthEnemy <= 0) {
 			CameraMovement.Shake ();
 			CameraMovement.HitStop ();
+			GameController.AddChain();
 			GameController.AddScore(score);
 			Explode ();
 			if(deathExplosion != null){
