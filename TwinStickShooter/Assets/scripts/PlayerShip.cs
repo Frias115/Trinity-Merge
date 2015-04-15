@@ -19,13 +19,19 @@ public class PlayerShip : MonoBehaviour {
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
 	public AudioSource source;
+	
+	public AudioSource deathSource;
 	public AudioClip shotSound;
+	public AudioClip explosionSound;
 
 
 	public void PlaySound (AudioClip c) {
 		source.PlayOneShot (c);
-
-		}
+	}
+	
+	public void PlayDeathSound (AudioClip c) {
+		deathSource.PlayOneShot (c);
+	}
 
 
 	// Use this for initialization
@@ -92,7 +98,9 @@ public class PlayerShip : MonoBehaviour {
 		if (_healthPlayer <= 0) {
 			deathExplosion.Play();
 			deathExplosion.transform.parent = null;
+			PlayDeathSound (explosionSound);
 			Destroy(this.gameObject);
+
 		}
 	}
 
