@@ -1223,7 +1223,7 @@ MonoBehaviour:
     m_PostInfinity: 1
   frontalLoop: 1
   lateralLoop: .5
-  velocidadFrontal: 15
+  velocidadFrontal: 30
   velocidadLateral: 0
   timeBetweenShots: .5
   timeInDash: 1.5
@@ -1310,7 +1310,7 @@ MonoBehaviour:
     m_PostInfinity: 1
   frontalLoop: 1
   lateralLoop: .5
-  velocidadFrontal: 15
+  velocidadFrontal: 30
   velocidadLateral: 0
   timeBetweenShots: .5
   timeInDash: 1.5
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   timeBetweenDash: 1.5
   balaEnemigo: {fileID: 0}
   explosionEnemigo: {fileID: 0}
-  healthEnemy: 20
+  healthEnemy: 2
   damageEnemy: 1
   deathExplosion: {fileID: 19802322}
   hijos:
@@ -1587,7 +1587,7 @@ MonoBehaviour:
     m_PostInfinity: 1
   frontalLoop: 1
   lateralLoop: .5
-  velocidadFrontal: 15
+  velocidadFrontal: 30
   velocidadLateral: 0
   timeBetweenShots: .5
   timeInDash: 1.5
@@ -1674,7 +1674,7 @@ MonoBehaviour:
     m_PostInfinity: 1
   frontalLoop: 1
   lateralLoop: .5
-  velocidadFrontal: 15
+  velocidadFrontal: 30
   velocidadLateral: 0
   timeBetweenShots: .5
   timeInDash: 1.5

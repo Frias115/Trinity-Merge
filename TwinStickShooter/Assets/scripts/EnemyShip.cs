@@ -43,6 +43,14 @@ public class EnemyShip : MonoBehaviour {
 		if(player != null)
 		{
 			player.Damage(this.damageEnemy);
+			if(hijos != null)
+			{
+				foreach(EnemyShip hijo in hijos)
+				{
+					hijo.transform.parent = null;
+					hijo.gameObject.SetActive(true);
+				}
+			}
 			Destroy(gameObject);
 		}
 	}
