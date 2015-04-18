@@ -18,8 +18,8 @@ public class PlayerShip : MonoBehaviour {
 	public int _damagePlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
+
 	public AudioSource source;
-	
 	public AudioSource deathSource;
 	public AudioClip shotSound;
 	public AudioClip explosionSound;

@@ -16,6 +16,20 @@ public class EnemyShip : MonoBehaviour {
 	public int _damageEnemy = 1;
 	public ParticleSystem deathExplosion;
 
+	public AudioSource source;
+	public AudioSource deathSource;
+	public AudioClip shotSound;
+	public AudioClip explosionSound;
+
+
+
+	public void PlaySound (AudioClip c) {
+		source.PlayOneShot (c);
+	}
+	
+	public void PlayDeathSound (AudioClip c) {
+		deathSource.PlayOneShot (c);
+	}
 
 
 	// Use this for initialization
@@ -54,6 +68,7 @@ public class EnemyShip : MonoBehaviour {
 				deathExplosion.Play();
 				deathExplosion.transform.parent = null;
 			}
+			PlayDeathSound (explosionSound);
 			Destroy (this.gameObject);
 		}
 	}
@@ -76,6 +91,9 @@ public class EnemyShip : MonoBehaviour {
 		if (shotTimer > timeBetweenShots && balaEnemigo != null) {
 			GameObject baladisparada = (GameObject)Instantiate (balaEnemigo, balaEnemigo.transform.position, balaEnemigo.transform.rotation); 
 			baladisparada.SetActive (true);
+			PlaySound (shotSound);
+			while(shotTimer >= timeBetweenShots)
+				shotTimer -= timeBetweenShots;
 			shotTimer = 0;
 		}
 
