@@ -537,11 +537,11 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .0549999997
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 124
+  Priority: 32
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -595,11 +595,11 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .109999999
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 124
+  Priority: 125
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -750,8 +750,8 @@ MonoBehaviour:
   shootParticle: {fileID: 19825582}
   source: {fileID: 8217428}
   deathSource: {fileID: 8293506}
-  shotSound: {fileID: 8300000, guid: 037e5dc48d882a14fab907ee59d0e7f4, type: 3}
-  explosionSound: {fileID: 8300000, guid: ff4d0043c3db6b6448e3eb69d7dd374b, type: 3}
+  shotSound: {fileID: 8300000, guid: fd04d046252c94b439d6ccd086e3e94d, type: 3}
+  explosionSound: {fileID: 8300000, guid: f6ce30c05e264a148bdff1624a197f5f, type: 3}
 --- !u!114 &11499746
 MonoBehaviour:
   m_ObjectHideFlags: 1
