@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour {
 	public static UnityEngine.UI.Text scoreText;
 	public  UnityEngine.UI.Text _scoreText;
 	public static int score = 0;
-	static int cadena = 1;
+	static int chain = 1;
 	static float chainTimer = 0;
 	static float maxChainTimer = 4.0f;
 
@@ -20,10 +20,10 @@ public class GameController : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		if (cadena > 1) {
+		if (chain > 1) {
 			CheckChain();
 		}
-		Debug.Log (cadena);
+		Debug.Log (chain);
 	}
 
 	public static void CheckChain (){
@@ -36,15 +36,18 @@ public class GameController : MonoBehaviour {
 	}
 
 	public static void AddChain (){
-		cadena++;
+		chain++;
+		chainTimer = 0;
 	}
 
 	public static void ResetChain (){
-		cadena = 1;
+		chain = 1;
+		chainTimer = 0;
 	}
 
-	public static void AddScore(int enemyValue){
-		score += enemyValue;
+	public static void AddScore(int scoreValue){
+		chainTimer = 0;
+		score += scoreValue * chain;
 		scoreText.text = "Score: " + score;
 	}
 	

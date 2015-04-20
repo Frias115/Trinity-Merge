@@ -1426,7 +1426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88131106a86cd124e8bde4015512ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -1522,6 +1521,7 @@ MonoBehaviour:
   hijos:
   - {fileID: 11445968}
   - {fileID: 11412354}
+  score: {fileID: 0}
   rotationSpeed: 100
 --- !u!114 &11412346
 MonoBehaviour:
@@ -1556,7 +1556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bfd6c59b078f534bbd1aa9eb29b49b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -1622,6 +1621,7 @@ MonoBehaviour:
   hijos:
   - {fileID: 11412362}
   - {fileID: 11412344}
+  score: {fileID: 0}
   rotationSpeed: 100
 --- !u!114 &11412352
 MonoBehaviour:
@@ -1646,7 +1646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fe0c0c390b8f644a875500c60e968d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -1710,7 +1709,8 @@ MonoBehaviour:
   damageEnemy: 1
   deathExplosion: {fileID: 19812354}
   hijos: []
-  rotationSpeed: 100
+  score: {fileID: 0}
+  rotationSpeed: 200
 --- !u!114 &11412356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1733,7 +1733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88131106a86cd124e8bde4015512ea2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -1829,6 +1828,7 @@ MonoBehaviour:
   hijos:
   - {fileID: 11445986}
   - {fileID: 11445976}
+  score: {fileID: 0}
   rotationSpeed: 100
 --- !u!114 &11412364
 MonoBehaviour:
@@ -1922,7 +1922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fe0c0c390b8f644a875500c60e968d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -1986,7 +1985,8 @@ MonoBehaviour:
   damageEnemy: 1
   deathExplosion: {fileID: 19845966}
   hijos: []
-  rotationSpeed: 100
+  score: {fileID: 0}
+  rotationSpeed: 200
 --- !u!114 &11445970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2068,7 +2068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fe0c0c390b8f644a875500c60e968d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -2132,7 +2131,8 @@ MonoBehaviour:
   damageEnemy: 1
   deathExplosion: {fileID: 19845972}
   hijos: []
-  rotationSpeed: 100
+  score: {fileID: 0}
+  rotationSpeed: 200
 --- !u!114 &11445978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2262,7 +2262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fe0c0c390b8f644a875500c60e968d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -2326,7 +2325,8 @@ MonoBehaviour:
   damageEnemy: 1
   deathExplosion: {fileID: 19845978}
   hijos: []
-  rotationSpeed: 100
+  score: {fileID: 0}
+  rotationSpeed: 200
 --- !u!114 &11445988
 MonoBehaviour:
   m_ObjectHideFlags: 1

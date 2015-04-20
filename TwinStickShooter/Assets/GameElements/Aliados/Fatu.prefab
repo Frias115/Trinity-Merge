@@ -488,7 +488,7 @@ MonoBehaviour:
   bala: {fileID: 194996}
   rotationInterpolation: 15
   timeBetweenShots: .150000006
-  _healthPlayer: 10
+  healthPlayer: 5
   deathExplosion: {fileID: 19895002}
   shootParticle: {fileID: 19895012}
 --- !u!114 &11495004
