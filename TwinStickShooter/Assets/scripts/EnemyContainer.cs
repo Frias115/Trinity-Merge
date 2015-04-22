@@ -10,7 +10,7 @@ public class EnemyContainer : MonoBehaviour {
 		p = GetComponent<ParticleSystem> ();
 		p.Play ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (!p.isPlaying) {
