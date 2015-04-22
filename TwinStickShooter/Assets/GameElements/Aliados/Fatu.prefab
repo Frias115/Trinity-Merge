@@ -29,7 +29,7 @@ GameObject:
   - 198: {fileID: 19895002}
   - 199: {fileID: 19995002}
   - 114: {fileID: 11495004}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 494998}
   - 212: {fileID: 21295012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ GameObject:
   - 4: {fileID: 495000}
   - 198: {fileID: 19895012}
   - 199: {fileID: 19995012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - 4: {fileID: 495002}
   - 198: {fileID: 19895004}
   - 199: {fileID: 19995004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - 4: {fileID: 495004}
   - 198: {fileID: 19895006}
   - 199: {fileID: 19995006}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - 198: {fileID: 19895008}
   - 199: {fileID: 19995008}
   - 114: {fileID: 11495008}
-  m_Layer: 14
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - 198: {fileID: 19895010}
   - 199: {fileID: 19995010}
   - 114: {fileID: 11495012}
-  m_Layer: 14
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 194992}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
@@ -445,7 +445,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Radius: .5
-  m_Center: {x: 0, y: 0}
+  m_Center: {x: 0, y: .439999998}
 --- !u!58 &5895010
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -480,15 +480,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: .5
-  dragInInput: .100000001
-  dragLateral: .5
-  dragBreak: .200000003
-  aceleracionInDirection: 15
-  aceleracionInOppositeDir: 30
+  dragInInput: .0500000007
+  dragLateral: .300000012
+  dragBreak: .100000001
+  aceleracionInDirection: 25
+  aceleracionInOppositeDir: 50
   bala: {fileID: 194996}
   rotationInterpolation: 15
   timeBetweenShots: .150000006
-  _healthPlayer: 10
+  healthPlayer: 1
   deathExplosion: {fileID: 19895002}
   shootParticle: {fileID: 19895012}
 --- !u!114 &11495004
