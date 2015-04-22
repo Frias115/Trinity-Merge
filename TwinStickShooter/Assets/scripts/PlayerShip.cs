@@ -18,6 +18,7 @@ public class PlayerShip : MonoBehaviour {
 	public int _damagePlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
+	public ParticleSystem powerUp;
 
 	public AudioSource source;
 	public AudioSource deathSource;
@@ -76,6 +77,7 @@ public class PlayerShip : MonoBehaviour {
 
 		//Posicion jugador
 		playerPosition = transform.position;
+		CheckPowerUp ();
 
 	}
 
@@ -87,6 +89,16 @@ public class PlayerShip : MonoBehaviour {
 		{
 			player.Damage(this._damagePlayer);
 			Destroy(gameObject);
+		}
+		if(col.gameObject.GetComponent<PowerUp>()){
+			powerUpTimer = 0;
+			if(!powerUpped){
+				timeBetweenShots = timeBetweenShots/pu_shotTimeFactor;
+				bala.transform.localScale = bala.transform.localScale*pu_SizeFactor;
+			}
+			powerUpped = true;
+			powerUp.Play ();
+			Destroy(col.gameObject);
 		}
 	}
 		
@@ -105,8 +117,22 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	
+	bool powerUpped = false;
+	float powerUpTime = 5;
+	float powerUpTimer = 0;
+	float pu_shotTimeFactor = 3;
+	float pu_SizeFactor = 2;
 
-
+	void CheckPowerUp(){
+		powerUpTimer += Time.deltaTime;
+		if (powerUpTimer > powerUpTime) {
+			if(powerUpped){
+				timeBetweenShots = timeBetweenShots*pu_shotTimeFactor;
+				bala.transform.localScale = bala.transform.localScale/ pu_SizeFactor;
+				powerUpped = false;
+			}
+		}
+	}
 
 	
 	void Update(){

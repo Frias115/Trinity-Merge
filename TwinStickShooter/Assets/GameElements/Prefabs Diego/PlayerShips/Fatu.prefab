@@ -192,7 +192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &199746
 GameObject:
   m_ObjectHideFlags: 1
@@ -739,7 +739,7 @@ MonoBehaviour:
   dragInInput: .100000001
   dragLateral: .5
   dragBreak: .200000003
-  aceleracionInDirection: 15
+  aceleracionInDirection: 23
   aceleracionInOppositeDir: 30
   bala: {fileID: 152694}
   rotationInterpolation: 15
@@ -3023,7 +3023,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4290576027
+        rgba: 4279500331
       minMaxState: 0
     startSize:
       scalar: 1
@@ -4070,7 +4070,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 1559756488
+        rgba: 1550909105
       minMaxState: 0
     startSize:
       scalar: .699999988

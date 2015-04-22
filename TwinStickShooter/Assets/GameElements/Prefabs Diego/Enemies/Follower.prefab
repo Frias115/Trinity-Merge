@@ -589,7 +589,7 @@ MonoBehaviour:
   source: {fileID: 8227838}
   deathSource: {fileID: 8227836}
   shotSound: {fileID: 0}
-  explosionSound: {fileID: 8300000, guid: f6ce30c05e264a148bdff1624a197f5f, type: 3}
+  explosionSound: {fileID: 8300000, guid: 3ac3ce765c53fab4aa0eccc902ef0c84, type: 3}
   rotationSpeed: 100
 --- !u!114 &11460368
 MonoBehaviour:
