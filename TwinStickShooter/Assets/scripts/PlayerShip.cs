@@ -19,6 +19,7 @@ public class PlayerShip : MonoBehaviour {
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
 	public ParticleSystem powerUp;
+	public ParticleSystem powerUp02;
 
 	public AudioSource source;
 	public AudioSource deathSource;
@@ -78,6 +79,7 @@ public class PlayerShip : MonoBehaviour {
 		//Posicion jugador
 		playerPosition = transform.position;
 		CheckPowerUp ();
+		CheckPowerUp02 ();
 
 	}
 
@@ -100,6 +102,16 @@ public class PlayerShip : MonoBehaviour {
 			powerUp.Play ();
 			Destroy(col.gameObject);
 		}
+		if(col.gameObject.GetComponent<PowerUp02>()){
+			powerUpTimer = 0;
+			if(!powerUpped) {
+				aceleracionInDirection = aceleracionInDirection / pu_velocityFactor;
+			}
+			powerUpped = true;
+			powerUp02.Play ();
+			Destroy (col.gameObject);
+		}
+
 	}
 		
 	public void Damage(int damage)
@@ -122,6 +134,7 @@ public class PlayerShip : MonoBehaviour {
 	float powerUpTimer = 0;
 	float pu_shotTimeFactor = 3;
 	float pu_SizeFactor = 2;
+	float pu_velocityFactor = 0.3f;
 
 	void CheckPowerUp(){
 		powerUpTimer += Time.deltaTime;
@@ -134,7 +147,17 @@ public class PlayerShip : MonoBehaviour {
 		}
 	}
 
-	
+	void CheckPowerUp02() {
+		powerUpTimer += Time.deltaTime;
+		if (powerUpTimer > powerUpTime) {
+			if (powerUpped) {
+				aceleracionInDirection = aceleracionInDirection * pu_velocityFactor;
+				powerUpped = false;
+			}
+		}
+	}
+
+		
 	void Update(){
 		Vector2 firingDirection = Vector2.right * GameInput.ejeXDisparo + Vector2.up * GameInput.ejeYDisparo;
 		if (firingDirection.magnitude > 0.5f) {
