@@ -74,16 +74,18 @@ public class EnemyShip : MonoBehaviour {
 				deathExplosion.transform.parent = null;
 			}
 
-			SpawnController.enemigosRestantes--;
+
 
 			if(hijos != null)
 			{
 				foreach(EnemyShip hijo in hijos)
 				{
+					SpawnController.enemigosRestantes++;
 					hijo.transform.parent = null;
 					hijo.gameObject.SetActive(true);
 				}
 			}
+			SpawnController.enemigosRestantes--;
 			Destroy (this.gameObject);
 		}
 	}

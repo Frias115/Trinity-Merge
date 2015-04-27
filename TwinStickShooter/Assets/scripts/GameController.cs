@@ -5,14 +5,17 @@ public class GameController : MonoBehaviour {
 
 	public static UnityEngine.UI.Text scoreText;
 	public  UnityEngine.UI.Text _scoreText;
+	public static UnityEngine.UI.Image chainTimerText;
+	public  UnityEngine.UI.Image _chainTimerText;
 	public static int score = 0;
 	static int chain = 1;
 	static float chainTimer = 0;
-	static float maxChainTimer = 4.0f;
+	static float maxChainTime = 1.5f;
 
 	// Use this for initialization
 	void Start () {
 		scoreText = _scoreText;
+		chainTimerText = _chainTimerText;
 	}
 	
 	// Update is called once per frame
@@ -23,12 +26,13 @@ public class GameController : MonoBehaviour {
 		if (chain > 1) {
 			CheckChain();
 		}
+		chainTimerText.fillAmount = 1 - chainTimer/maxChainTime;
 		Debug.Log (chain);
 	}
 
 	public static void CheckChain (){
 		chainTimer += Time.deltaTime;
-		if(chainTimer > maxChainTimer)
+		if(chainTimer > maxChainTime)
 		{
 			chainTimer = 0;
 			ResetChain();
@@ -37,6 +41,8 @@ public class GameController : MonoBehaviour {
 
 	public static void AddChain (){
 		chain++;
+		if (chain > 6)
+			chain = 6;
 		chainTimer = 0;
 	}
 
@@ -48,7 +54,8 @@ public class GameController : MonoBehaviour {
 	public static void AddScore(int scoreValue){
 		chainTimer = 0;
 		score += scoreValue * chain;
-		scoreText.text = "Score: " + score;
+		scoreText.text = "" + score;
+		ScoreShower.Show (scoreValue,chain,PlayerShip.playerPosition);
 	}
 	
 }
