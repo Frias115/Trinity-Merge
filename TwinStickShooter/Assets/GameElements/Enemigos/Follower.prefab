@@ -500,7 +500,7 @@ GameObject:
   - 58: {fileID: 5864812}
   - 114: {fileID: 11464812}
   - 212: {fileID: 21264812}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   - 58: {fileID: 5864814}
   - 114: {fileID: 11464814}
   - 212: {fileID: 21264814}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - 58: {fileID: 5864816}
   - 114: {fileID: 11464816}
   - 212: {fileID: 21264816}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +557,7 @@ GameObject:
   - 58: {fileID: 5864818}
   - 114: {fileID: 11464818}
   - 212: {fileID: 21264818}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3056,6 +3056,7 @@ MonoBehaviour:
   velocidadFrontal: 25
   velocidadLateral: 30
   dragBreak: .200000003
+  rotationSpeed: 1000
 --- !u!114 &11464814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3103,6 +3104,7 @@ MonoBehaviour:
   velocidadFrontal: 25
   velocidadLateral: 30
   dragBreak: .200000003
+  rotationSpeed: 1000
 --- !u!114 &11464816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3150,6 +3152,7 @@ MonoBehaviour:
   velocidadFrontal: 25
   velocidadLateral: 30
   dragBreak: .200000003
+  rotationSpeed: 1000
 --- !u!114 &11464818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3197,6 +3200,7 @@ MonoBehaviour:
   velocidadFrontal: 25
   velocidadLateral: 30
   dragBreak: .200000003
+  rotationSpeed: 1000
 --- !u!114 &11464820
 MonoBehaviour:
   m_ObjectHideFlags: 1

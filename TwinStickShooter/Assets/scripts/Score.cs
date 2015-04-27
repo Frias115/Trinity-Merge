@@ -13,6 +13,7 @@ public class Score : MonoBehaviour {
 	public float frontalLoop, lateralLoop;
 	public float velocidadFrontal, velocidadLateral;
 	public float dragBreak = 0.2f;
+	public float rotationSpeed = 1000;
 
 	float timer = 0;
 	
@@ -34,6 +35,15 @@ public class Score : MonoBehaviour {
 	
 	void FixedUpdate () {
 		timer += Time.deltaTime;
-		rigidbody2D.velocity = (transform.up *frontalCurve.Evaluate(timer/frontalLoop) *velocidadFrontal + transform.right *lateralCurve.Evaluate(timer/lateralLoop) *velocidadLateral) * dragBreak ;
+		if (PlayerShip.playerPosition.x - transform.position.x < 5 && PlayerShip.playerPosition.y - transform.position.y < 5) {
+			rigidbody2D.velocity = transform.up * frontalCurve.Evaluate (timer / frontalLoop) * velocidadFrontal + transform.right * lateralCurve.Evaluate (timer / lateralLoop) * velocidadLateral;
+			rigidbody2D.velocity = rigidbody2D.velocity * dragBreak;
+		} else {
+			Vector3 dir = (PlayerShip.playerPosition - transform.position).normalized;
+			Quaternion rot = Quaternion.LookRotation (Vector3.forward, dir);
+			transform.rotation = Quaternion.Slerp (transform.rotation,rot, rotationSpeed*Time.deltaTime);
+			velocidadFrontal = 60;
+			rigidbody2D.velocity = transform.up *frontalCurve.Evaluate(timer/frontalLoop) *velocidadFrontal + transform.right *lateralCurve.Evaluate(timer/lateralLoop) *velocidadLateral ;
+		}
 	}
 }
