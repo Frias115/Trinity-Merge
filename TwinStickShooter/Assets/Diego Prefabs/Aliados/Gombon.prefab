@@ -354,7 +354,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146080}
   m_LocalRotation: {x: -.068869032, y: .0410298556, z: .992227077, w: -.0951790884}
-  m_LocalPosition: {x: -.181999996, y: 2.18900013, z: 0}
+  m_LocalPosition: {x: .200000003, y: 2.18900013, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 446062}
@@ -698,6 +698,8 @@ MonoBehaviour:
   deathExplosion: {fileID: 19846084}
   shootParticle: {fileID: 19846082}
   powerUp: {fileID: 19867576}
+  powerUp02: {fileID: 19867576}
+  powerUp03: {fileID: 0}
   source: {fileID: 8246082}
   deathSource: {fileID: 8246084}
   shotSound: {fileID: 8300000, guid: fd04d046252c94b439d6ccd086e3e94d, type: 3}

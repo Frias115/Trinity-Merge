@@ -20,6 +20,7 @@ public class PlayerShip : MonoBehaviour {
 	public ParticleSystem shootParticle;
 	public ParticleSystem powerUp;
 	public ParticleSystem powerUp02;
+	public ParticleSystem powerUp03;
 
 	public AudioSource source;
 	public AudioSource deathSource;
@@ -80,6 +81,7 @@ public class PlayerShip : MonoBehaviour {
 		playerPosition = transform.position;
 		CheckPowerUp ();
 		CheckPowerUp02 ();
+		CheckPowerUp03 ();
 
 	}
 
@@ -92,7 +94,7 @@ public class PlayerShip : MonoBehaviour {
 			player.Damage(this._damagePlayer);
 			Destroy(gameObject);
 		}
-		if(col.gameObject.GetComponent<PowerUp>()){
+		if(col.gameObject.GetComponent<PowerUp>()) {
 			powerUpTimer = 0;
 			if(!powerUpped){
 				timeBetweenShots = timeBetweenShots/pu_shotTimeFactor;
@@ -102,15 +104,26 @@ public class PlayerShip : MonoBehaviour {
 			powerUp.Play ();
 			Destroy(col.gameObject);
 		}
-		if(col.gameObject.GetComponent<PowerUp02>()){
-			powerUpTimer = 0;
-			if(!powerUpped) {
+		if(col.gameObject.GetComponent<PowerUp02>()) {
+			powerUpTimer2 = 0;
+			if(!powerUpped2) {
 				aceleracionInDirection = aceleracionInDirection / pu_velocityFactor;
 			}
-			powerUpped = true;
+			powerUpped2 = true;
+			Destroy(col.gameObject);
 			powerUp02.Play ();
-			Destroy (col.gameObject);
 		}
+		if(col.gameObject.GetComponent<PowerUp03>()) {
+			powerUpTimer3 = 0;
+			if(!powerUpped2) {
+				_healthPlayer = _healthPlayer * pu_healthFactor;
+			}
+			powerUpped3 = true;
+			Destroy(col.gameObject);
+			powerUp03.Play ();
+
+		}
+
 
 	}
 		
@@ -130,13 +143,18 @@ public class PlayerShip : MonoBehaviour {
 
 	
 	bool powerUpped = false;
+	bool powerUpped2 = false;
+	bool powerUpped3 = false;
 	float powerUpTime = 5;
 	float powerUpTimer = 0;
+	float powerUpTimer2 = 0;
+	float powerUpTimer3 = 0;
 	float pu_shotTimeFactor = 3;
 	float pu_SizeFactor = 2;
-	float pu_velocityFactor = 0.3f;
+	float pu_velocityFactor = 0.7f;
+	int pu_healthFactor = 500;
 
-	void CheckPowerUp(){
+	void CheckPowerUp() {
 		powerUpTimer += Time.deltaTime;
 		if (powerUpTimer > powerUpTime) {
 			if(powerUpped){
@@ -148,17 +166,28 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	void CheckPowerUp02() {
-		powerUpTimer += Time.deltaTime;
-		if (powerUpTimer > powerUpTime) {
-			if (powerUpped) {
+		powerUpTimer2 += Time.deltaTime;
+		if (powerUpTimer2 > powerUpTime) {
+			if (powerUpped2) {
 				aceleracionInDirection = aceleracionInDirection * pu_velocityFactor;
-				powerUpped = false;
+				powerUpped2 = false;
 			}
 		}
 	}
 
+	void CheckPowerUp03() {
+			powerUpTimer3 += Time.deltaTime;
+			if (powerUpTimer3 > powerUpTime) {
+				if (powerUpped3) {
+					_healthPlayer = _healthPlayer / pu_healthFactor;
+					powerUpped3 = false;
+				}
+			}
+
+		}
+
 		
-	void Update(){
+	void Update() {
 		Vector2 firingDirection = Vector2.right * GameInput.ejeXDisparo + Vector2.up * GameInput.ejeYDisparo;
 		if (firingDirection.magnitude > 0.5f) {
 			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (Vector3.forward, firingDirection), rotationInterpolation * Time.deltaTime);
