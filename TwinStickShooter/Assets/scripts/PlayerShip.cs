@@ -22,6 +22,7 @@ public class PlayerShip : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//bala.transform.parent = null;
 	}
 	
 	// Update is called once per frame

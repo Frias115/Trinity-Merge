@@ -11,6 +11,17 @@ public class WaveController : MonoBehaviour {
 	public float waitTime = 5;
 	public int spawnsXWaves = 1;
 
+	public UnityEngine.UI.Image fade;
+	float fadeTimer = 0;
+	public float fadeTime = 1;
+	bool fadingOut = false;
+
+	public UnityEngine.UI.Image fadeLevelInfo;
+	float timeToFade = 0;
+	public float fadingTime = 1;
+	bool fadeOut = false;
+
+
 	// Use this for initialization
 	void Start () {
 		activeWave = new GameObject[spawnsXWaves];
@@ -21,9 +32,35 @@ public class WaveController : MonoBehaviour {
 			numberWave++;
 		}
 	}
+
+	public int nextlevel;
 	
 	// Update is called once per frame
 	void Update () {
+		if (!fadingOut) {
+			fadeTimer += Time.deltaTime;
+			if (fadeTimer > fadeTime) {
+				fadeTimer = fadeTime;
+			}
+		} else {
+			fadeTimer -= Time.deltaTime;
+			if (fadeTimer < 0) {
+				fadeTimer = 0;
+				Application.LoadLevel (nextlevel);
+			}
+		}
+		fade.color = new Color (0,0,0, 1 - fadeTimer/fadeTime);
+		if (fadeTimer == fadeTime) {
+			
+			timeToFade += Time.deltaTime;
+			if (timeToFade > fadingTime) {
+					timeToFade = fadingTime;
+			}
+			fadeLevelInfo.color = new Color (1, 1, 1, 1 - timeToFade / fadingTime);
+
+		} else {
+			fadeLevelInfo.color = new Color (1, 1, 1, fadeTimer/fadeTime);
+		}
 		/*
 		if (SpawnController.enemigosRestantes ==  0 && numberWave < waves.Length) {
 			spawnTimer +=  Time.deltaTime;
@@ -59,6 +96,10 @@ public class WaveController : MonoBehaviour {
 				spawnTimer = 0;
 			}
 			
+		}else if(SpawnController.enemigosRestantes ==  0){
+			fadingOut = true;
+			fadeOut = true;
+
 		}
 
 	}
