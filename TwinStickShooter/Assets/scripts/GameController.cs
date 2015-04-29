@@ -5,17 +5,20 @@ public class GameController : MonoBehaviour {
 
 	public static UnityEngine.UI.Text scoreText;
 	public  UnityEngine.UI.Text _scoreText;
-	public static UnityEngine.UI.Image chainTimerText;
-	public  UnityEngine.UI.Image _chainTimerText;
+	public static UnityEngine.UI.Image chainTimerImage;
+	public  UnityEngine.UI.Image _chainTimerImage;
+	public UnityEngine.UI.Image _chainImage;
+	public UnityEngine.Sprite[] chainSprites;
 	public static int score = 0;
-	static int chain = 1;
+	static int chain = 0;
 	static float chainTimer = 0;
 	static float maxChainTime = 1.5f;
+	static int[] chainMultipliers =  {1,2,4,8,16,32}; 
 
 	// Use this for initialization
 	void Start () {
 		scoreText = _scoreText;
-		chainTimerText = _chainTimerText;
+		chainTimerImage = _chainTimerImage;
 	}
 	
 	// Update is called once per frame
@@ -23,10 +26,35 @@ public class GameController : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		if (chain > 1) {
+		if (chain > 0) {
 			CheckChain();
 		}
-		chainTimerText.fillAmount = 1 - chainTimer/maxChainTime;
+
+		switch (chain) {
+		case 0:
+			_chainImage.sprite =(UnityEngine.Sprite) Instantiate (chainSprites[0]);
+			break;
+		case 1:
+			_chainImage.sprite =(UnityEngine.Sprite) Instantiate (chainSprites[1]);
+			break;
+		case 2:
+			_chainImage.sprite =(UnityEngine.Sprite) Instantiate (chainSprites[2]);
+			break;
+		case 3:
+			_chainImage.sprite =(UnityEngine.Sprite) Instantiate (chainSprites[3]); 
+			break;
+		case 4:
+			_chainImage.sprite =(UnityEngine.Sprite) Instantiate (chainSprites[4]);
+			break;
+		case 5:
+			_chainImage.sprite =(UnityEngine.Sprite) Instantiate (chainSprites[5]);
+			break;
+		default:
+			break;
+		}
+
+
+		chainTimerImage.fillAmount = 1 - chainTimer/maxChainTime;
 		Debug.Log (chain);
 	}
 
@@ -41,19 +69,19 @@ public class GameController : MonoBehaviour {
 
 	public static void AddChain (){
 		chain++;
-		if (chain > 6)
-			chain = 6;
+		if (chain > 5)
+			chain = 5;
 		chainTimer = 0;
 	}
 
 	public static void ResetChain (){
-		chain = 1;
+		chain = 0;
 		chainTimer = 0;
 	}
 
 	public static void AddScore(int scoreValue){
 		chainTimer = 0;
-		score += scoreValue * chain;
+		score += scoreValue * chainMultipliers[chain];
 		scoreText.text = "" + score;
 		ScoreShower.Show (scoreValue,chain,PlayerShip.playerPosition);
 	}

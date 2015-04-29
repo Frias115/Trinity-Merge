@@ -42,22 +42,22 @@ public class ScoreShower : MonoBehaviour {
 		}
 		
 		switch (chain) {
-		case 1:
+		case 0:
 			_instance.chainx1.Play ();
 			break;
-		case 2:
+		case 1:
 			_instance.chainx2.Play ();
 			break;
-		case 3:
+		case 2:
 			_instance.chainx4.Play ();
 			break;
-		case 4:
+		case 3:
 			_instance.chainx8.Play ();
 			break;
-		case 5:
+		case 4:
 			_instance.chainx16.Play ();
 			break;
-		case 6:
+		case 5:
 			_instance.chainx32.Play ();
 			break;
 		default:

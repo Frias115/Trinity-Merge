@@ -7506,7 +7506,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoreText: {fileID: 1199492068}
-  _chainTimerText: {fileID: 462480816}
+  _chainTimerImage: {fileID: 462480816}
+  chainSprites:
+  - {fileID: 21300000, guid: 74c4313d8a98f544296131c3e0abf512, type: 3}
+  - {fileID: 21300000, guid: 0a5ced602efcd26419878b4dd7511944, type: 3}
+  - {fileID: 21300000, guid: c9dd309e3982bb64bb94b780120a491e, type: 3}
+  - {fileID: 21300000, guid: 76d34906750f56a42a60282e6cd1d245, type: 3}
+  - {fileID: 21300000, guid: 817375b99ae6e314398db38b81f9491a, type: 3}
+  - {fileID: 21300000, guid: b20351751c561da4ba16085a77e88807, type: 3}
 --- !u!114 &754107623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10311,7 +10318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: fe1829bb5d1261f4a80130919170757d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74c4313d8a98f544296131c3e0abf512, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

@@ -68,7 +68,6 @@ public class PlayerShip : MonoBehaviour {
 		healthPlayer -= damage;
 		CameraMovement.Shake ();
 		CameraMovement.HitStop ();
-		GameController.ResetChain ();
 		if (healthPlayer <= 0) {
 			deathExplosion.Play();
 			deathExplosion.transform.parent = null;
