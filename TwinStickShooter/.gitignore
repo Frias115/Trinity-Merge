@@ -48,9 +48,9 @@ Temporary Items
 *.Trashes 
 
 # All platforms:
-/TwinStickShooter/Library
-/TwinStickShooter/Temp
-/TwinStickShooter/obj
+/Library
+/Temp
+/obj
 *.csproj
 *.pidb
 *.unityproj

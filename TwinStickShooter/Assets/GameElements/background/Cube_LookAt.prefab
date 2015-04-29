@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11436662}
   - 114: {fileID: 11436664}
   - 114: {fileID: 11478082}
+  - 114: {fileID: 11436020}
   m_Layer: 14
   m_Name: Cube_LookAt
   m_TagString: Untagged
@@ -59,6 +60,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136662}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11436020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56f322b98de65a4aa1c77c50902a849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color1: {r: .996078432, g: .250980407, b: .0313725509, a: .623529434}
+  color2: {r: 1, g: .250304163, b: .0294117928, a: 1}
+  lerpTime: .300000012
+  tiempoDeCadaColor: 1
 --- !u!114 &11436662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,7 +137,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-  lookAttarget: 0
+  lookAttarget: 1
 --- !u!114 &11436664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,23 +192,17 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136662}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 768ea60e607be80499e6a42c493b1612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colors:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 1, g: 0, b: .848275661, a: 1}
-  - {r: .241379261, g: 0, b: 1, a: 1}
-  - {r: 0, g: .5448277, b: 1, a: 1}
-  - {r: 0, g: .958620548, b: 1, a: 1}
-  - {r: 0, g: 1, b: .131034613, a: 1}
-  - {r: 1, g: .972413778, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: .5448277, b: 1, a: 1}
-  - {r: 0, g: .352941155, b: .00243405718, a: 1}
-  tiempoDeCadaColor: .330000013
+  - {r: .11807961, g: .470379531, b: .764705896, a: .490196079}
+  - {r: .182471886, g: .583816886, b: .91911763, a: .490196079}
+  - {r: 0, g: .751724005, b: 1, a: .490196079}
+  - {r: .235294119, g: .795131683, b: .941176474, a: .490196079}
+  tiempoDeCadaColor: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

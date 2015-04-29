@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
 public class changeColor : MonoBehaviour {
 
 	float nextUsage;
 	public Color[] colors;
+
 	public float tiempoDeCadaColor;
 	// Use this for initialization
 	void Start () {
@@ -24,3 +27,7 @@ public class changeColor : MonoBehaviour {
 
 
 }
+
+
+
+
