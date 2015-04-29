@@ -41,7 +41,11 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
+<<<<<<< HEAD:TwinStickShooter/Assets/GameElements/Prefabs Diego/Main Camera.prefab
+  m_BackGroundColor: {r: .326989621, g: .375717431, b: .741176486, a: .0196078438}
+=======
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
+>>>>>>> master:TwinStickShooter/Assets/GameElements/Main Camera.prefab
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
