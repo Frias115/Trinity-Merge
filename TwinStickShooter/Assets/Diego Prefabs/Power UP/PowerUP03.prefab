@@ -260,7 +260,7 @@ ParticleSystem:
         rgba: 2467365625
       minMaxState: 2
     startSize:
-      scalar: 1
+      scalar: .600000024
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1178,7 +1178,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9935db2c0c2438e4ab2956a44ee0c903, type: 3}
-  m_Color: {r: .91911763, g: .128406152, b: .210203603, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
