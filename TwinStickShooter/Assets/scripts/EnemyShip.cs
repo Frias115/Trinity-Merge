@@ -3,7 +3,6 @@ using System.Collections;
 
 public class EnemyShip : MonoBehaviour {
 
-	public int score = 100;
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
 	public float velocidadFrontal, velocidadLateral;
@@ -19,6 +18,7 @@ public class EnemyShip : MonoBehaviour {
 	public int damageEnemy = 1;
 	public ParticleSystem deathExplosion;
 	public EnemyShip []hijos;
+	public GameObject score;
 
 
 
@@ -61,21 +61,31 @@ public class EnemyShip : MonoBehaviour {
 		if (healthEnemy <= 0) {
 			CameraMovement.Shake ();
 			CameraMovement.HitStop ();
-			GameController.AddScore(score);
+			GameController.AddChain();
 			Explode ();
+
+			if (score != null) {
+				score.SetActive (true);
+				score.transform.parent = null;
+			}
+
 			if(deathExplosion != null){
 				deathExplosion.Play();
 				deathExplosion.transform.parent = null;
 			}
-			SpawnController.enemigosRestantes--;
+
+
+
 			if(hijos != null)
 			{
 				foreach(EnemyShip hijo in hijos)
 				{
+					SpawnController.enemigosRestantes++;
 					hijo.transform.parent = null;
 					hijo.gameObject.SetActive(true);
 				}
 			}
+			SpawnController.enemigosRestantes--;
 			Destroy (this.gameObject);
 		}
 	}
