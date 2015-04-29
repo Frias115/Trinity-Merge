@@ -50,7 +50,14 @@ public class WaveController : MonoBehaviour {
 			}
 		}
 		fade.color = new Color (0,0,0, 1 - fadeTimer/fadeTime);
-		fadeLevelInfo.color = new Color (0,0,0, 1 - timeToFade/fadingTime);
+		if(fadeTimer == fadeTime){
+			
+			timeToFade += Time.deltaTime;
+			if (timeToFade > fadingTime) {
+				timeToFade = fadingTime;
+			}
+		}
+		fadeLevelInfo.color = new Color (1,1,1, 1 - timeToFade/fadingTime);
 
 		/*
 		if (SpawnController.enemigosRestantes ==  0 && numberWave < waves.Length) {
