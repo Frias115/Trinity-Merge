@@ -59,7 +59,7 @@ public class PlayerShip : MonoBehaviour {
 
 		//Posicion jugador
 		playerPosition = transform.position;
-
+		
 	}
 
 	
