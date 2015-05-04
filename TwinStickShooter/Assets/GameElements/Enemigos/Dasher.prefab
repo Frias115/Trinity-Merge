@@ -85,7 +85,7 @@ GameObject:
   - 114: {fileID: 11476992}
   - 82: {fileID: 8266904}
   m_Layer: 10
-  m_Name: FlipFlop
+  m_Name: Dasher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,7 +527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fe0c0c390b8f644a875500c60e968d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -583,11 +582,15 @@ MonoBehaviour:
   velocidadFrontal: 1
   velocidadLateral: 0
   timeBetweenShots: .5
+  timeInDash: 1.5
+  timeBetweenDash: 1.5
   balaEnemigo: {fileID: 176994}
   explosionEnemigo: {fileID: 0}
-  _healthEnemy: 5
-  _damageEnemy: 1
+  healthEnemy: 1
+  damageEnemy: 1
   deathExplosion: {fileID: 19812872}
+  hijos: []
+  score: {fileID: 0}
   source: {fileID: 8266904}
   deathSource: {fileID: 8266902}
   shotSound: {fileID: 8300000, guid: 0f8d45b67367e9e49ac21e3e9872469e, type: 3}

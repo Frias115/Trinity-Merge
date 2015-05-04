@@ -15,6 +15,7 @@ public class PlayerShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
 	public int healthPlayer = 1;
+	public int damagePlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
 	public ParticleSystem powerUp;
@@ -91,7 +92,7 @@ public class PlayerShip : MonoBehaviour {
 		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
 		if(player != null)
 		{
-			player.Damage(this._damagePlayer);
+			player.Damage(this.damagePlayer);
 			Destroy(gameObject);
 		}
 		if(col.gameObject.GetComponent<PowerUp>()) {
@@ -116,7 +117,7 @@ public class PlayerShip : MonoBehaviour {
 		if(col.gameObject.GetComponent<PowerUp03>()) {
 			powerUpTimer3 = 0;
 			if(!powerUpped2) {
-				_healthPlayer = _healthPlayer * pu_healthFactor;
+				healthPlayer = healthPlayer * pu_healthFactor;
 			}
 			powerUpped3 = true;
 			Destroy(col.gameObject);
@@ -177,7 +178,7 @@ public class PlayerShip : MonoBehaviour {
 			powerUpTimer3 += Time.deltaTime;
 			if (powerUpTimer3 > powerUpTime) {
 				if (powerUpped3) {
-					_healthPlayer = _healthPlayer / pu_healthFactor;
+					healthPlayer = healthPlayer / pu_healthFactor;
 					powerUpped3 = false;
 				}
 			}
