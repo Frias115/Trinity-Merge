@@ -48,12 +48,16 @@ Temporary Items
 *.Trashes 
 
 # All platforms:
-/Library
-/Temp
-/obj
+TwinStickShooter/Library
+TwinStickShooter/Temp
+TwinStickShooter/obj
 *.csproj
 *.pidb
 *.unityproj
 *.sln
 *.userprefs
 *.suo
+TwinStickShooter/Library/metadata/00/00000000000000003000000000000000
+TwinStickShooter/Library/metadata/00/00000000000000004000000000000000
+TwinStickShooter/Temp/UnityLockfile
+TwinStickShooter/Temp/tempFile

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class PlayerShip : MonoBehaviour {
@@ -14,8 +14,7 @@ public class PlayerShip : MonoBehaviour {
 	public float rotationInterpolation = 0.5f;
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
-	public int _healthPlayer = 1;
-	public int _damagePlayer = 1;
+	public int healthPlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
 	public ParticleSystem powerUp;
@@ -37,10 +36,11 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 
+
 	// Use this for initialization
 	void Start () {
+		//bala.transform.parent = null;
 	}
-
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -126,13 +126,12 @@ public class PlayerShip : MonoBehaviour {
 
 
 	}
-		
 	public void Damage(int damage)
 	{
-		_healthPlayer -= damage;
+		healthPlayer -= damage;
 		CameraMovement.Shake ();
 		CameraMovement.HitStop ();
-		if (_healthPlayer <= 0) {
+		if (healthPlayer <= 0) {
 			deathExplosion.Play();
 			deathExplosion.transform.parent = null;
 			PlayDeathSound (explosionSound);
@@ -141,7 +140,6 @@ public class PlayerShip : MonoBehaviour {
 		}
 	}
 
-	
 	bool powerUpped = false;
 	bool powerUpped2 = false;
 	bool powerUpped3 = false;
@@ -186,8 +184,7 @@ public class PlayerShip : MonoBehaviour {
 
 		}
 
-		
-	void Update() {
+	void Update(){
 		Vector2 firingDirection = Vector2.right * GameInput.ejeXDisparo + Vector2.up * GameInput.ejeYDisparo;
 		if (firingDirection.magnitude > 0.5f) {
 			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (Vector3.forward, firingDirection), rotationInterpolation * Time.deltaTime);
