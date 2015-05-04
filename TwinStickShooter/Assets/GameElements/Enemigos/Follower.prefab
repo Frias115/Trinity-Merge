@@ -1591,7 +1591,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864774
 CircleCollider2D:
@@ -1602,7 +1602,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864776
 CircleCollider2D:
@@ -1613,7 +1613,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864778
 CircleCollider2D:
@@ -1624,7 +1624,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864780
 CircleCollider2D:
@@ -1635,7 +1635,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864782
 CircleCollider2D:
@@ -1646,7 +1646,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864784
 CircleCollider2D:
@@ -1657,7 +1657,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864786
 CircleCollider2D:
@@ -1668,7 +1668,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864788
 CircleCollider2D:
@@ -1679,7 +1679,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864790
 CircleCollider2D:
@@ -1690,7 +1690,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864792
 CircleCollider2D:
@@ -1701,7 +1701,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864794
 CircleCollider2D:
@@ -1712,7 +1712,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864796
 CircleCollider2D:
@@ -1723,7 +1723,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864798
 CircleCollider2D:
@@ -1734,7 +1734,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864800
 CircleCollider2D:
@@ -1745,7 +1745,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864802
 CircleCollider2D:
@@ -1756,7 +1756,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864804
 CircleCollider2D:
@@ -1767,7 +1767,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864806
 CircleCollider2D:
@@ -1778,7 +1778,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864808
 CircleCollider2D:
@@ -1789,7 +1789,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864810
 CircleCollider2D:
@@ -1800,7 +1800,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864812
 CircleCollider2D:
@@ -1811,7 +1811,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864814
 CircleCollider2D:
@@ -1822,7 +1822,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .800000012
+  m_Radius: 1.20000005
   m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!58 &5864816
 CircleCollider2D:
@@ -1912,14 +1912,6 @@ MonoBehaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147394}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Radius: .800000012
-  m_Center: {x: 5.96046448e-08, y: 0}
---- !u!58 &5864818
-CircleCollider2D:
-=======
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a654a55386078146a3ebc3acb57b2c5, type: 3}
   m_Name: 
@@ -1963,20 +1955,11 @@ CircleCollider2D:
   deathExplosion: {fileID: 0}
 --- !u!114 &11447396
 MonoBehaviour:
->>>>>>> master
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147396}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Radius: .800000012
-  m_Center: {x: 5.96046448e-08, y: 0}
---- !u!61 &6164772
-BoxCollider2D:
-=======
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a654a55386078146a3ebc3acb57b2c5, type: 3}
   m_Name: 
@@ -2020,7 +2003,6 @@ BoxCollider2D:
   deathExplosion: {fileID: 0}
 --- !u!114 &11447398
 MonoBehaviour:
->>>>>>> master
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -3288,19 +3270,12 @@ MonoBehaviour:
   timeInDash: 1.5
   timeBetweenDash: 1.5
   balaEnemigo: {fileID: 0}
-<<<<<<< HEAD
-  explosionEnemigo: {fileID: 164822}
-=======
   explosionEnemigo: {fileID: 147400}
->>>>>>> master
   healthEnemy: 1
   damageEnemy: 1
   deathExplosion: {fileID: 19864776}
   hijos: []
-<<<<<<< HEAD
-=======
   score: {fileID: 164822}
->>>>>>> master
   rotationSpeed: 100
 --- !u!114 &11464822
 MonoBehaviour:

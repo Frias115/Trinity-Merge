@@ -1,17 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!1 &127946
-=======
---- !u!1 &141360
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   - 4: {fileID: 427946}
   - 198: {fileID: 19827946}
   - 199: {fileID: 19927946}
@@ -19,20 +14,11 @@ GameObject:
   - 82: {fileID: 8227946}
   m_Layer: 14
   m_Name: Death Explosion
-=======
-  - 4: {fileID: 441360}
-  - 33: {fileID: 3341360}
-  - 65: {fileID: 6541360}
-  - 23: {fileID: 2341360}
-  m_Layer: 8
-  m_Name: Cube
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!1 &127948
 GameObject:
   m_ObjectHideFlags: 1
@@ -54,16 +40,12 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &127950
-=======
---- !u!1 &141362
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   - 4: {fileID: 427950}
   - 198: {fileID: 19827948}
   - 199: {fileID: 19927948}
@@ -82,14 +64,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427954}
-=======
-  - 4: {fileID: 441362}
-  - 33: {fileID: 3341362}
-  - 23: {fileID: 2341362}
-  - 50: {fileID: 5041360}
-  - 58: {fileID: 5841360}
-  - 114: {fileID: 11441360}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Layer: 9
   m_Name: Disparo
   m_TagString: Untagged
@@ -97,7 +71,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!1 &127956
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,35 +106,22 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &127962
-=======
---- !u!1 &141364
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   - 4: {fileID: 427962}
   - 33: {fileID: 3327950}
   - 23: {fileID: 2327950}
-=======
-  - 4: {fileID: 441364}
-  - 33: {fileID: 3341364}
-  - 23: {fileID: 2341364}
-  - 61: {fileID: 6141360}
-  - 50: {fileID: 5041362}
-  - 114: {fileID: 11441362}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Layer: 8
-  m_Name: Tommy
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!1 &127964
 GameObject:
   m_ObjectHideFlags: 1
@@ -216,14 +176,10 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &427946
-=======
---- !u!4 &441360
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0900000036, y: .529999971, z: 0}
@@ -234,25 +190,11 @@ Transform:
   m_Father: {fileID: 427968}
   m_RootOrder: 0
 --- !u!4 &427948
-=======
-  m_GameObject: {fileID: 141360}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00999999978, y: .230000004, z: .0700000003}
-  m_LocalScale: {x: .154350281, y: 1.33000946, z: 1}
-  m_Children: []
-  m_Father: {fileID: 441364}
-  m_RootOrder: 1
---- !u!4 &441362
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127948}
-=======
-  m_GameObject: {fileID: 141362}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .183388174, y: .0548077822, z: .208278179}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
@@ -295,7 +237,6 @@ Transform:
   m_LocalPosition: {x: .0359999985, y: .529999971, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_Father: {fileID: 427968}
   m_RootOrder: 3
 --- !u!4 &427958
@@ -311,16 +252,10 @@ Transform:
   m_Father: {fileID: 427948}
   m_RootOrder: 0
 --- !u!4 &427962
-=======
-  m_Father: {fileID: 441364}
-  m_RootOrder: 0
---- !u!4 &441364
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .00999999978, y: .349999994, z: .0199999996}
@@ -370,47 +305,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!23 &2327946
-=======
-  m_GameObject: {fileID: 141364}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: -12.1000004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 441362}
-  - {fileID: 441360}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!23 &2341360
 Renderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141360}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!23 &2341362
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
-Renderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127948}
-=======
-  m_GameObject: {fileID: 141362}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -425,27 +324,19 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!23 &2327950
-=======
---- !u!23 &2341364
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 Renderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127962}
-=======
-  m_GameObject: {fileID: 141364}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 169b1c7bb7c77494bba315cf663e238f, type: 2}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -453,125 +344,72 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!33 &3327946
-=======
---- !u!33 &3341360
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127948}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &3327950
-=======
-  m_GameObject: {fileID: 141360}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &3341362
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141362}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &3341364
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127962}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!50 &5027946
-=======
-  m_GameObject: {fileID: 141364}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!50 &5041360
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127948}
-=======
-  m_GameObject: {fileID: 141362}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
-  m_Interpolate: 2
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!50 &5027950
-=======
---- !u!50 &5041362
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127968}
-=======
-  m_GameObject: {fileID: 141364}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!58 &5827946
-=======
---- !u!58 &5841360
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127948}
-=======
-  m_GameObject: {fileID: 141362}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Radius: .50000006
   m_Center: {x: 5.96046448e-08, y: 0}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!58 &5827950
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127968}
-=======
---- !u!61 &6141360
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141364}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Radius: .5
   m_Center: {x: 0, y: 0}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
 --- !u!82 &8227946
 AudioSource:
   m_ObjectHideFlags: 1
@@ -700,30 +538,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11427948
-=======
---- !u!65 &6541360
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141360}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11441360
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127948}
-=======
-  m_GameObject: {fileID: 141362}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc190d87287cd754984c57facfec2cd4, type: 3}
@@ -763,22 +582,14 @@ MonoBehaviour:
   frontalLoop: 3
   lateralLoop: .200000003
   _healthBullet: 1
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   deathExplosion: {fileID: 19827952}
   velocidadFrontal: 100
   velocidadLateral: 60
 --- !u!114 &11427952
-=======
-  deathExplosion: {fileID: 0}
-  velocidadFrontal: 25
-  velocidadLateral: 30
---- !u!114 &11441362
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_GameObject: {fileID: 127958}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -791,15 +602,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127968}
-=======
-  m_GameObject: {fileID: 141364}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f9d039398e26f1488cafcf9e9b1a507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   maxSpeed: .5
   dragInInput: .100000001
   dragLateral: .5
@@ -6184,20 +5991,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 126b1116d8a64ef4092de17303475d70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-=======
-  maxSpeed: .800000012
-  dragInInput: .100000001
-  dragLateral: .5
-  dragBreak: .200000003
-  aceleracionInDirection: 20
-  aceleracionInOppositeDir: 40
-  bala: {fileID: 141362}
-  rotationInterpolation: 19
-  timeBetweenShots: .200000003
-  _healthPlayer: 1
-  deathExplosion: {fileID: 0}
-  shootParticle: {fileID: 0}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -6207,10 +6000,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-<<<<<<< HEAD:TwinStickShooter/Assets/Diego Prefabs/Aliados/Tommy.prefab
   m_RootGameObject: {fileID: 127968}
-=======
-  m_RootGameObject: {fileID: 141364}
->>>>>>> master:TwinStickShooter/Assets/GameElements/Aliados/Tommy.prefab
   m_IsPrefabParent: 1
   m_IsExploded: 1

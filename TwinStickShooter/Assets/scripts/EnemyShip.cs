@@ -3,18 +3,22 @@ using System.Collections;
 
 public class EnemyShip : MonoBehaviour {
 
-	public int score = 100;
 	public AnimationCurve frontalCurve, lateralCurve;
 	public float frontalLoop, lateralLoop;
 	public float velocidadFrontal, velocidadLateral;
 	protected float timer = 0;
 	public float timeBetweenShots = 0.5f;
-	static float shotTimer = 0;
+	public float timeInDash = 1.5f;
+	public float timeBetweenDash = 1.5f;
+	protected float shotTimer = 0;
+	protected float dashTimer = 0;
 	public GameObject balaEnemigo;
 	public GameObject explosionEnemigo;
-	public int _healthEnemy = 1;
-	public int _damageEnemy = 1;
+	public int healthEnemy = 1;
+	public int damageEnemy = 1;
 	public ParticleSystem deathExplosion;
+	public EnemyShip []hijos;
+	public GameObject score;
 
 	public AudioSource source;
 	public AudioSource deathSource;
@@ -44,6 +48,7 @@ public class EnemyShip : MonoBehaviour {
 		timer += Time.deltaTime;
 		Move ();
 		Shoot ();
+		Dash ();
 	}
 
 	void OnCollisionEnter2D (Collision2D col)
@@ -51,24 +56,48 @@ public class EnemyShip : MonoBehaviour {
 		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
 		if(player != null)
 		{
-			player.Damage(this._damageEnemy);
+			player.Damage(this.damageEnemy);
+			if(hijos != null)
+			{
+				foreach(EnemyShip hijo in hijos)
+				{
+					hijo.transform.parent = null;
+					hijo.gameObject.SetActive(true);
+				}
+			}
 			Destroy(gameObject);
 		}
 	}
 
 	public virtual void Damage(int damage)
 	{
-		_healthEnemy -= damage;
-		if (_healthEnemy <= 0) {
+		healthEnemy -= damage;
+		if (healthEnemy <= 0) {
 			CameraMovement.Shake ();
 			CameraMovement.HitStop ();
-			GameController.AddScore(score);
+			GameController.AddChain();
 			Explode ();
+
+			if (score != null) {
+				score.SetActive (true);
+				score.transform.parent = null;
+			}
+
 			if(deathExplosion != null){
 				deathExplosion.Play();
 				deathExplosion.transform.parent = null;
 			}
 			PlayDeathSound (explosionSound);
+			if(hijos != null)
+			{
+				foreach(EnemyShip hijo in hijos)
+				{
+					SpawnController.enemigosRestantes++;
+					hijo.transform.parent = null;
+					hijo.gameObject.SetActive(true);
+				}
+			}
+			SpawnController.enemigosRestantes--;
 			Destroy (this.gameObject);
 		}
 	}
@@ -80,6 +109,10 @@ public class EnemyShip : MonoBehaviour {
 		}
 	}
 
+	public virtual void Dash()
+	{
+
+	}
 
 
 	public virtual void Move(){

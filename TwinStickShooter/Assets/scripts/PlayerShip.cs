@@ -15,6 +15,7 @@ public class PlayerShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
 	public int healthPlayer = 1;
+	public int damagePlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
 	public ParticleSystem powerUp;
@@ -79,7 +80,6 @@ public class PlayerShip : MonoBehaviour {
 
 		//Posicion jugador
 		playerPosition = transform.position;
-<<<<<<< HEAD
 		CheckPowerUp ();
 		CheckPowerUp02 ();
 		CheckPowerUp03 ();
@@ -92,7 +92,7 @@ public class PlayerShip : MonoBehaviour {
 		PlayerShip player = col.gameObject.GetComponent<PlayerShip> ();
 		if(player != null)
 		{
-			player.Damage(this._damagePlayer);
+			player.Damage(this.damagePlayer);
 			Destroy(gameObject);
 		}
 		if(col.gameObject.GetComponent<PowerUp>()) {
@@ -117,7 +117,7 @@ public class PlayerShip : MonoBehaviour {
 		if(col.gameObject.GetComponent<PowerUp03>()) {
 			powerUpTimer3 = 0;
 			if(!powerUpped2) {
-				_healthPlayer = _healthPlayer * pu_healthFactor;
+				healthPlayer = healthPlayer * pu_healthFactor;
 			}
 			powerUpped3 = true;
 			Destroy(col.gameObject);
@@ -127,13 +127,6 @@ public class PlayerShip : MonoBehaviour {
 
 
 	}
-		
-=======
-		
-	}
-
-	
->>>>>>> master
 	public void Damage(int damage)
 	{
 		healthPlayer -= damage;
@@ -148,8 +141,6 @@ public class PlayerShip : MonoBehaviour {
 		}
 	}
 
-	
-<<<<<<< HEAD
 	bool powerUpped = false;
 	bool powerUpped2 = false;
 	bool powerUpped3 = false;
@@ -187,18 +178,14 @@ public class PlayerShip : MonoBehaviour {
 			powerUpTimer3 += Time.deltaTime;
 			if (powerUpTimer3 > powerUpTime) {
 				if (powerUpped3) {
-					_healthPlayer = _healthPlayer / pu_healthFactor;
+					healthPlayer = healthPlayer / pu_healthFactor;
 					powerUpped3 = false;
 				}
 			}
 
 		}
 
-		
-	void Update() {
-=======
 	void Update(){
->>>>>>> master
 		Vector2 firingDirection = Vector2.right * GameInput.ejeXDisparo + Vector2.up * GameInput.ejeYDisparo;
 		if (firingDirection.magnitude > 0.5f) {
 			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (Vector3.forward, firingDirection), rotationInterpolation * Time.deltaTime);
