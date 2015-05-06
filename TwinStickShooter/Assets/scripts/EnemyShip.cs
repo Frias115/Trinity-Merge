@@ -99,6 +99,7 @@ public class EnemyShip : MonoBehaviour {
 			}
 			SpawnController.enemigosRestantes--;
 			Destroy (this.gameObject);
+			GameController.SetPowerUp(transform.position);
 		}
 	}
 

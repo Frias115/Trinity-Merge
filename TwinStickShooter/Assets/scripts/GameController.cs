@@ -14,16 +14,30 @@ public class GameController : MonoBehaviour {
 	static float chainTimer = 0;
 	static float maxChainTime = 1.5f;
 	static int[] chainMultipliers =  {1,2,4,8,16,32}; 
+	public GameObject[] powerups;
+	static GameObject[] _powerups;
 
 	// Use this for initialization
 	void Start () {
 		scoreText = _scoreText;
 		chainTimerImage = _chainTimerImage;
+		_powerups = powerups;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	}
+
+	static int enemiesKilled = 0;
+	public static int enemiesForPowerup = 10;
+
+	public static void SetPowerUp(Vector3 pos){
+		enemiesKilled++;
+		if (enemiesKilled >= enemiesForPowerup) {
+			enemiesKilled = 0;
+			GameObject.Instantiate(_powerups[Mathf.Min (_powerups.Length - 1, Random.Range(0,_powerups.Length - 1))] ,pos,Quaternion.identity);
+		}
+		}
 
 	void FixedUpdate () {
 		if (chain > 0) {

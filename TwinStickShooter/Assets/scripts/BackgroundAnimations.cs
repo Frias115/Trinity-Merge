@@ -5,7 +5,7 @@ public class BackgroundAnimations : MonoBehaviour {
 
 	private float contador;
 
-	public Transform target;
+	//public Transform target;
 
 	public float intervalo;
 	public float rotationSpeed;
@@ -31,7 +31,7 @@ public class BackgroundAnimations : MonoBehaviour {
 		//transform.Rotate (Vector2.right * Time.deltaTime*rotationSpeed);
 		//transform.position += -Vector3.up * Time.deltaTime * verticalSpeed;
 		if(lookAttarget)
-			myTransform.LookAt(target);
+			myTransform.LookAt(PlayerShip.playerPosition);
 		if(scalationSpeed > 0)
 			myTransform.localScale = originalScale * scalation.Evaluate (contador/scalationSpeed);
 	}

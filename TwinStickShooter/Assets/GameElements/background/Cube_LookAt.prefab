@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 102.800003, y: -32.0999908, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,8 +71,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56f322b98de65a4aa1c77c50902a849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color1: {r: .996078432, g: .250980407, b: .0313725509, a: .623529434}
-  color2: {r: 1, g: .250304163, b: .0294117928, a: 1}
+  color1: {r: .595588207, g: .595588207, b: .595588207, a: .623529434}
+  color2: {r: .53725493, g: .588235319, b: .674509823, a: 1}
   lerpTime: .300000012
   tiempoDeCadaColor: 1
 --- !u!114 &11436662
@@ -86,7 +86,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f376436ba6d249a885a7bb2a27cb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   intervalo: 0
   rotationSpeed: 100
   scalationSpeed: 2
@@ -149,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855f376436ba6d249a885a7bb2a27cb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   intervalo: 0
   rotationSpeed: 0
   scalationSpeed: .5
