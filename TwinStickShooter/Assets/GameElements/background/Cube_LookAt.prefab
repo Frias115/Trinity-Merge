@@ -71,8 +71,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56f322b98de65a4aa1c77c50902a849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color1: {r: .595588207, g: .595588207, b: .595588207, a: .623529434}
-  color2: {r: .53725493, g: .588235319, b: .674509823, a: 1}
+  color1: {r: 1, g: .476377964, b: 0, a: .623529434}
+  color2: {r: .816176474, g: .390345275, b: 0, a: 1}
   lerpTime: .300000012
   tiempoDeCadaColor: 1
 --- !u!114 &11436662
@@ -183,7 +183,7 @@ MonoBehaviour:
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
-  lookAttarget: 1
+  lookAttarget: 0
 --- !u!114 &11478082
 MonoBehaviour:
   m_ObjectHideFlags: 1
