@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &127838
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 127838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 413194}
   m_RootOrder: 0
@@ -525,7 +525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a4b2b03a77a244bba36a55dcfd6065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 100
   frontalCurve:
     serializedVersion: 2
     m_Curve:
@@ -581,11 +580,15 @@ MonoBehaviour:
   velocidadFrontal: 10
   velocidadLateral: 0
   timeBetweenShots: .5
+  timeInDash: 1.5
+  timeBetweenDash: 1.5
   balaEnemigo: {fileID: 0}
   explosionEnemigo: {fileID: 0}
-  _healthEnemy: 5
-  _damageEnemy: 1000
+  healthEnemy: 1
+  damageEnemy: 1
   deathExplosion: {fileID: 19860368}
+  hijos: []
+  score: {fileID: 0}
   source: {fileID: 8227838}
   deathSource: {fileID: 8227836}
   shotSound: {fileID: 0}
@@ -1701,7 +1704,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1b96034e0ef19346a3d83b79218eb54, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df21ae3264c5f5445a5126d49e08be91, type: 3}
   m_Color: {r: 1, g: .553416967, b: .132352948, a: 1}
 --- !u!1001 &100100000
 Prefab:
