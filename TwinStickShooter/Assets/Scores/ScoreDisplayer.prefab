@@ -664,13 +664,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
-          value: 1
+        - time: .25
+          value: .466214597
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: 1
+        - time: .5
           value: 1
+          inSlope: -.0514950342
+          outSlope: -.0514950342
+          tangentMode: 0
+        - time: 1
+          value: .5
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -1721,13 +1726,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
-          value: 1
+        - time: .25
+          value: .466214597
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: 1
+        - time: .5
           value: 1
+          inSlope: -.0514950342
+          outSlope: -.0514950342
+          tangentMode: 0
+        - time: 1
+          value: .5
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -2778,13 +2788,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
-          value: 1
+        - time: .25
+          value: .466214597
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: 1
+        - time: .5
           value: 1
+          inSlope: -.0514950342
+          outSlope: -.0514950342
+          tangentMode: 0
+        - time: 1
+          value: .5
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -3835,13 +3850,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
-          value: 1
+        - time: .25
+          value: .466214597
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: 1
+        - time: .5
           value: 1
+          inSlope: -.0514950342
+          outSlope: -.0514950342
+          tangentMode: 0
+        - time: 1
+          value: .5
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -4892,13 +4912,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
+        - time: .300000012
+          value: 1
+          inSlope: -.0526226722
+          outSlope: -.0526226722
+          tangentMode: 0
+        - time: .699999988
           value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         - time: 1
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -5949,13 +5974,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
+        - time: .300000012
+          value: 1
+          inSlope: -.0526226722
+          outSlope: -.0526226722
+          tangentMode: 0
+        - time: .699999988
           value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         - time: 1
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -7006,13 +7036,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
+        - time: .300000012
+          value: 1
+          inSlope: -.0526226722
+          outSlope: -.0526226722
+          tangentMode: 0
+        - time: .699999988
           value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         - time: 1
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -8063,13 +8098,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
+        - time: .300000012
+          value: 1
+          inSlope: -.0526226722
+          outSlope: -.0526226722
+          tangentMode: 0
+        - time: .699999988
           value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         - time: 1
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -9120,13 +9160,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
+        - time: .300000012
+          value: 1
+          inSlope: -.0526226722
+          outSlope: -.0526226722
+          tangentMode: 0
+        - time: .699999988
           value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         - time: 1
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -10177,13 +10222,18 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: .715867162
+        - time: .300000012
+          value: 1
+          inSlope: -.0526226722
+          outSlope: -.0526226722
+          tangentMode: 0
+        - time: .699999988
           value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         - time: 1
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -10249,16 +10299,16 @@ ParticleSystem:
           rgba: 16777215
         key1:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 3355487999
         key2:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 3355508731
         key3:
           serializedVersion: 2
-          rgba: 16777215
+          rgba: 36607
         key4:
           serializedVersion: 2
-          rgba: 0
+          rgba: 16777215
         key5:
           serializedVersion: 2
           rgba: 0
@@ -10269,22 +10319,22 @@ ParticleSystem:
           serializedVersion: 2
           rgba: 0
         ctime0: 0
-        ctime1: 18890
-        ctime2: 51272
-        ctime3: 65535
-        ctime4: 0
+        ctime1: 2313
+        ctime2: 32768
+        ctime3: 63029
+        ctime4: 65535
         ctime5: 0
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 21781
-        atime2: 39899
+        atime1: 23323
+        atime2: 42405
         atime3: 65535
-        atime4: 0
-        atime5: 0
+        atime4: 65535
+        atime5: 65535
         atime6: 0
         atime7: 0
-        m_NumColorKeys: 4
+        m_NumColorKeys: 5
         m_NumAlphaKeys: 4
       minGradient:
         key0:
