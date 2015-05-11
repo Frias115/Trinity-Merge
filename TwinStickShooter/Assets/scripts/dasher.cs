@@ -19,7 +19,8 @@ public class dasher : EnemyShip {
 			rigidbody2D.velocity = Vector2.zero;
 		} else if (dashTimer > timeBetweenDash + timeInDash) {
 			dashTimer = 0;
-		} else {dashTimer += Time.deltaTime;
+		} else {
+			dashTimer += Time.deltaTime;
 			rigidbody2D.velocity = transform.up * frontalCurve.Evaluate ((dashTimer - timeBetweenDash)/ timeInDash) * velocidadFrontal + transform.right * lateralCurve.Evaluate (timer / lateralLoop) * velocidadLateral;
 
 		}

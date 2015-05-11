@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5756a36bd1dafb447aa7e9b11c32ce35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 20
+  score: 50
   velocidadFrontal: 25
   rotationSpeed: 1000
 --- !u!114 &11491330
@@ -4920,7 +4920,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: dbf32efc8af12ff49bbc03d31ec1a7c3, type: 2}
+  - {fileID: 2100000, guid: d926f7be0673eaf48811cd52805b7913, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
