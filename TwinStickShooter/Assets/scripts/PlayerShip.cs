@@ -14,7 +14,12 @@ public class PlayerShip : MonoBehaviour {
 	public float rotationInterpolation = 0.5f;
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
+	float invulnerability = 0;
+	float invulnerabilityTimer = 0;
 	public int healthPlayer = 1;
+	public int maxLife;
+	public static int _healthPlayer;
+	public static int _healthPlayerMax;
 	public int damagePlayer = 1;
 	public ParticleSystem deathExplosion; 
 	public ParticleSystem shootParticle;
@@ -40,11 +45,18 @@ public class PlayerShip : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//bala.transform.parent = null;
+		_healthPlayer = healthPlayer;
+		_healthPlayerMax = maxLife;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		invulnerability -= Time.deltaTime;
+		if(invulnerability <= 0)
+		{
+			invulnerability = 0;
+		}
+		_healthPlayer = healthPlayer;
 		shotTimer += Time.deltaTime;
 		Vector2 input= GameInput.ejeX * Vector2.right + GameInput.ejeY * Vector2.up;
 		Vector2 vel = rigidbody2D.velocity;
@@ -127,17 +139,23 @@ public class PlayerShip : MonoBehaviour {
 
 
 	}
+
+	public float invulnerabilityTime = .5f;
 	public void Damage(int damage)
 	{
-		healthPlayer -= damage;
-		CameraMovement.Shake ();
-		CameraMovement.HitStop ();
-		if (healthPlayer <= 0) {
-			deathExplosion.Play();
-			deathExplosion.transform.parent = null;
-			PlayDeathSound (explosionSound);
-			Destroy(this.gameObject);
+		if (invulnerability == 0) {
+			invulnerability = invulnerabilityTime;
+			healthPlayer -= damage;
+			CameraMovement.Shake ();
+			CameraMovement.HitStop ();
+			if (healthPlayer <= 0) {
+				_healthPlayer = 0;
+				deathExplosion.Play ();
+				deathExplosion.transform.parent = null;
+				PlayDeathSound (explosionSound);
+				Destroy (this.gameObject);
 
+			}
 		}
 	}
 
