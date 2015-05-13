@@ -21,6 +21,13 @@ public class WaveController : MonoBehaviour {
 	public float fadingTime = 1;
 	bool fadeOut = false;
 
+	public float scoreTime = 1;
+	public float scoreTimer = 0;
+	bool scoreTimeStart = false;
+
+	public UnityEngine.UI.Text highScoreList;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -34,9 +41,27 @@ public class WaveController : MonoBehaviour {
 	}
 
 	public int nextlevel;
+
+	float deathFadeTimer = 0;
+	float deathFadeTime =1;
 	
 	// Update is called once per frame
 	void Update () {
+	
+
+		if (PlayerShip._healthPlayer == 0) {
+			deathFadeTimer += Time.deltaTime;
+			if(deathFadeTimer > deathFadeTime){
+				fadingOut = true;
+			}
+			//
+			highScoreList.transform.localPosition = new Vector3(1,1,1);
+			if(Input.anyKeyDown)
+			{
+				Application.LoadLevel(0);
+			}
+			//
+		}
 		if (!fadingOut) {
 			fadeTimer += Time.deltaTime;
 			if (fadeTimer > fadeTime) {
@@ -46,7 +71,13 @@ public class WaveController : MonoBehaviour {
 			fadeTimer -= Time.deltaTime;
 			if (fadeTimer < 0) {
 				fadeTimer = 0;
-				Application.LoadLevel (nextlevel);
+				if(PlayerShip._healthPlayer > 0){
+					Application.LoadLevel (nextlevel);
+				}else{
+					//
+					scoreTimeStart = true;
+					//
+				}
 			}
 		}
 		fade.color = new Color (0,0,0, 1 - fadeTimer/fadeTime);
@@ -56,10 +87,12 @@ public class WaveController : MonoBehaviour {
 			if (timeToFade > fadingTime) {
 					timeToFade = fadingTime;
 			}
-			fadeLevelInfo.color = new Color (1, 1, 1, 1 - timeToFade / fadingTime);
+			if(!fadingOut)
+				fadeLevelInfo.color = new Color (1, 1, 1, 1 - timeToFade / fadingTime);
 
 		} else {
-			fadeLevelInfo.color = new Color (1, 1, 1, fadeTimer/fadeTime);
+			if(!fadingOut)
+				fadeLevelInfo.color = new Color (1, 1, 1, fadeTimer/fadeTime);
 		}
 		/*
 		if (SpawnController.enemigosRestantes ==  0 && numberWave < waves.Length) {
