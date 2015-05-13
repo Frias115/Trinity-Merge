@@ -15,7 +15,7 @@ public class PlayerShip : MonoBehaviour {
 	public float timeBetweenShots = 0.5f;
 	float shotTimer = 0;
 	float invulnerability = 0;
-	float invulnerabilityTimer = 0;
+	public float invulnerabilityTime = .5f;
 	public int healthPlayer = 1;
 	public int maxLife;
 	public static int _healthPlayer;
@@ -140,7 +140,7 @@ public class PlayerShip : MonoBehaviour {
 
 	}
 
-	public float invulnerabilityTime = .5f;
+
 	public void Damage(int damage)
 	{
 		if (invulnerability == 0) {
