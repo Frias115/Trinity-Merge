@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour {
 	public UnityEngine.Sprite[] lifeSprites;
 	public static int score = 0;
 	static int chain = 0;
-	public int initialLife;
+	int initialLife;
 	static int life;
 	static float chainTimer = 0;
 	static float maxChainTime = 1.5f;
