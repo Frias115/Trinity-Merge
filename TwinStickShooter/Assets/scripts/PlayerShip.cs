@@ -51,6 +51,8 @@ public class PlayerShip : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+
+
 		invulnerability -= Time.deltaTime;
 		if(invulnerability <= 0)
 		{
