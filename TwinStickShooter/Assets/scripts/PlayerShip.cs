@@ -156,7 +156,7 @@ public class PlayerShip : MonoBehaviour {
 				deathExplosion.transform.parent = null;
 				PlayDeathSound (explosionSound);
 				Destroy (this.gameObject);
-
+				playerSelectionController.playerActive = null;
 			}
 		}
 	}

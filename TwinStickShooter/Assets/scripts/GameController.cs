@@ -20,10 +20,16 @@ public class GameController : MonoBehaviour {
 	static int[] chainMultipliers =  {1,2,4,8,16,32}; 
 	public GameObject[] powerups;
 	static GameObject[] _powerups;
+	static GameObject player;
+
 
 
 	// Use this for initialization
 	void Start () {
+		if (player == null) {
+			player = (GameObject)Instantiate(playerSelectionController.playerActive);
+			DontDestroyOnLoad(player);
+		}
 		scoreText = _scoreText;
 		chainTimerImage = _chainTimerImage;
 		_powerups = powerups;
