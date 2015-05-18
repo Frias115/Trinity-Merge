@@ -51,12 +51,12 @@ Material:
     m_Floats:
       data:
         first:
-          name: _InvFade
-        second: 1
-      data:
-        first:
           name: _Shininess
         second: .078125
+      data:
+        first:
+          name: _InvFade
+        second: 1
       data:
         first:
           name: _Parallax
@@ -65,16 +65,16 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .176470578, g: .965922832, b: 1, a: 1}
+        second: {r: .996078432, g: .0235294122, b: .968627453, a: 1}
       data:
         first:
-          name: _TintColor
-        second: {r: .5, g: .5, b: .5, a: .5}
+          name: _Emission
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _SpecColor
         second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
-          name: _Emission
-        second: {r: 0, g: 0, b: 0, a: 0}
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}
