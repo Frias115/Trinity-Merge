@@ -30,6 +30,7 @@ public class WaveController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		SpawnController.enemigosRestantes = 0;
 		numberWave = 0;
 		activeWave = new GameObject[spawnsXWaves];
 		for(int i = 0; i < spawnsXWaves; i++)

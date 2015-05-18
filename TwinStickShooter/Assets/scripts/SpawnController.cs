@@ -20,7 +20,7 @@ public class SpawnController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Debug.Log (enemigosRestantes);
+		Debug.Log (enemigosRestantes);
 		if (Application.isEditor) {
 			foreach(Transform g in spawnPoint){
 				Debug.DrawLine(g.position + Vector3.up, g.position - Vector3.up,Color.green);
