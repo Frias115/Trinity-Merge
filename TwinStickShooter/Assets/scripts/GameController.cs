@@ -13,17 +13,23 @@ public class GameController : MonoBehaviour {
 	public UnityEngine.Sprite[] lifeSprites;
 	public static int score = 0;
 	static int chain = 0;
-	public int initialLife;
+	int initialLife;
 	static int life;
 	static float chainTimer = 0;
 	static float maxChainTime = 1.5f;
 	static int[] chainMultipliers =  {1,2,4,8,16,32}; 
 	public GameObject[] powerups;
 	static GameObject[] _powerups;
+	static GameObject player;
+
 
 
 	// Use this for initialization
 	void Start () {
+		if (player == null) {
+			player = (GameObject)Instantiate(playerSelectionController.playerActive);
+			DontDestroyOnLoad(player);
+		}
 		scoreText = _scoreText;
 		chainTimerImage = _chainTimerImage;
 		_powerups = powerups;
