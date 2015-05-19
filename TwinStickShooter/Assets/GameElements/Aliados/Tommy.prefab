@@ -616,10 +616,15 @@ MonoBehaviour:
   bala: {fileID: 127954}
   rotationInterpolation: 15
   timeBetweenShots: .100000001
-  _healthPlayer: 10
-  _damagePlayer: 1
+  invulnerabilityTime: .5
+  healthPlayer: 1
+  maxLife: 1
+  damagePlayer: 1
   deathExplosion: {fileID: 19827946}
   shootParticle: {fileID: 19827948}
+  powerUp: {fileID: 0}
+  powerUp02: {fileID: 0}
+  powerUp03: {fileID: 0}
   source: {fileID: 8227948}
   deathSource: {fileID: 8227946}
   shotSound: {fileID: 8300000, guid: fd04d046252c94b439d6ccd086e3e94d, type: 3}
