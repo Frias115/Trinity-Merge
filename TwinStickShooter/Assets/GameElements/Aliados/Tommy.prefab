@@ -799,7 +799,7 @@ MonoBehaviour:
   timeBetweenShots: .100000001
   invulnerabilityTime: .5
   healthPlayer: 1
-  maxLife: 0
+  maxLife: 1
   damagePlayer: 1
   deathExplosion: {fileID: 19827946}
   shootParticle: {fileID: 19849934}
