@@ -48,7 +48,7 @@ public class WaveController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (numberWave);
+		//Debug.Log (numberWave);
 
 		if (PlayerShip._healthPlayer == 0) {
 			numberWave = 0;
