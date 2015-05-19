@@ -14,6 +14,8 @@ public class playerSelectionController : MonoBehaviour {
 	public float scaleMultiplier = 1.5f;
 	public bool fadingOut = false;
 	public AnimationCurve blinkCurve;
+	public GameObject[] players;
+	public static GameObject playerActive;
 
 	public UnityEngine.UI.Image fade;
 	float fadeBlackTimer = 0;
@@ -43,6 +45,14 @@ public class playerSelectionController : MonoBehaviour {
 		if(Input.anyKeyDown && movimientoCursor == 0 && GameInput.ejeX == 0)
 		{
 			fadingOut = true;
+			if(selected.text == "TOMMY"){
+				playerActive = players[0];
+			}else if(selected.text == "FATU"){
+				playerActive = players[1];
+			}else if(selected.text == "GOMBON"){
+				playerActive = players[2];
+			}
+
 			Application.LoadLevel(2);
 		}
 

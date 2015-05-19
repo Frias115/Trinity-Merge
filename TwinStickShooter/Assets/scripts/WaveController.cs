@@ -4,7 +4,6 @@ using System.Collections;
 public class WaveController : MonoBehaviour {
 
 	public GameObject[] waves;
-	//GameObject activeWave;
 	GameObject[] activeWave;
 	int numberWave = 0;
 	static float spawnTimer = 0;
@@ -31,6 +30,8 @@ public class WaveController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		SpawnController.enemigosRestantes = 0;
+		numberWave = 0;
 		activeWave = new GameObject[spawnsXWaves];
 		for(int i = 0; i < spawnsXWaves; i++)
 		{
@@ -47,9 +48,11 @@ public class WaveController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		Debug.Log (numberWave);
 
 		if (PlayerShip._healthPlayer == 0) {
+			numberWave = 0;
+			spawnsXWaves = 1;
 			deathFadeTimer += Time.deltaTime;
 			if(deathFadeTimer > deathFadeTime){
 				fadingOut = true;
