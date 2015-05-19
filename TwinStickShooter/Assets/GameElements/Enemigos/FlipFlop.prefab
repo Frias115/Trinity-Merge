@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &191338
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &195902
 GameObject:
   m_ObjectHideFlags: 1
@@ -3883,7 +3883,7 @@ ParticleSystem:
         rgba: 4293541631
       minMaxState: 0
     startSize:
-      scalar: 4
+      scalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4942,7 +4942,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 18b0d8ecfc886c54f8865ba7515b6c0b, type: 2}
+  - {fileID: 2100000, guid: e6e8a5085b1f52b4aac1711d45ab1e1f, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4951,7 +4951,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f40be7fdc427d6f4db7977b96345e587, type: 3}
-  m_Color: {r: 1, g: .242647052, b: .97772491, a: 1}
+  m_Color: {r: 1, g: .0241379142, b: .971298158, a: 1}
 --- !u!212 &21295902
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -4973,7 +4973,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 79d42f6cf03b2b342925ff0d551c1813, type: 3}
-  m_Color: {r: .435769916, g: .95588237, b: .84827292, a: 1}
+  m_Color: {r: 1, g: .45588237, b: .935986102, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

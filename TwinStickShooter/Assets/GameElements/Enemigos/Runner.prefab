@@ -70,7 +70,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &153272
 GameObject:
   m_ObjectHideFlags: 1
@@ -185,7 +185,7 @@ Transform:
   m_GameObject: {fileID: 153270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 402554}
   - {fileID: 453272}
@@ -1705,7 +1705,7 @@ ParticleSystem:
         rgba: 4282318820
       minMaxState: 0
     startSize:
-      scalar: 4
+      scalar: 8
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4809,7 +4809,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 18b0d8ecfc886c54f8865ba7515b6c0b, type: 2}
+  - {fileID: 2100000, guid: 7015fafee5edca7449831cebe6532894, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -4818,7 +4818,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 53261bbe9e42ca848a0cb819571314b4, type: 3}
-  m_Color: {r: 0, g: .544827461, b: 1, a: 1}
+  m_Color: {r: .816176474, g: .648140192, b: 0, a: 1}
 --- !u!212 &21259604
 SpriteRenderer:
   m_ObjectHideFlags: 1
