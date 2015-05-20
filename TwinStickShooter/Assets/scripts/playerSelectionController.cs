@@ -53,7 +53,7 @@ public class playerSelectionController : MonoBehaviour {
 				playerActive = players[2];
 			}
 
-			Application.LoadLevel(5);
+			Application.LoadLevel(2);
 		}
 
 		if(selected.text == "FATU" && timer == time){
