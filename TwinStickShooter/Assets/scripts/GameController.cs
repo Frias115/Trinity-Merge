@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour {
 	public GameObject[] powerups;
 	static GameObject[] _powerups;
 	static GameObject player;
-
+	public Transform spawnPointPlayer;
 
 
 	// Use this for initialization
@@ -29,6 +29,9 @@ public class GameController : MonoBehaviour {
 		if (player == null) {
 			player = (GameObject)Instantiate(playerSelectionController.playerActive);
 			DontDestroyOnLoad(player);
+			foreach (Transform child in spawnPointPlayer) {
+				Instantiate (playerSelectionController.playerActive, child.position, child.rotation);
+			}
 		}
 		scoreText = _scoreText;
 		chainTimerImage = _chainTimerImage;
