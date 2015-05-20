@@ -65,7 +65,7 @@ public class EnemyShip : MonoBehaviour {
 					hijo.gameObject.SetActive(true);
 				}
 			}
-			Destroy(gameObject);
+			Damage(999);
 		}
 	}
 
