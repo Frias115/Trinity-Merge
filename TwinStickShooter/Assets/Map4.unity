@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1 &25584604
 GameObject:
@@ -2807,7 +2808,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 90
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -2941,7 +2942,7 @@ Transform:
   - {fileID: 1672555421}
   - {fileID: 179637793}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &485938313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,12 +2992,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 16141d5e637e54b45a829e8e536d7bb3, type: 3}
   - {fileID: 21300000, guid: e068a01019aee1d4ab45b6d808e0bd28, type: 3}
   - {fileID: 21300000, guid: a6a97630fae7eeb4bb2f1d99ef48973a, type: 3}
-  initialLife: 0
   powerups:
   - {fileID: 137758, guid: b6fe3034a97f2c7469b0d993eac79453, type: 2}
   - {fileID: 180864, guid: 250b00eb13238744f82bee7774f48514, type: 2}
   - {fileID: 131646, guid: 699531ba5fa21dd4fa86d28af22d2738, type: 2}
   - {fileID: 131646, guid: 699531ba5fa21dd4fa86d28af22d2738, type: 2}
+  spawnPointPlayer: {fileID: 699869359}
 --- !u!114 &485938315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3491,8 +3492,8 @@ RectTransform:
   - {fileID: 1754222723}
   - {fileID: 930673928}
   - {fileID: 1689473621}
-  - {fileID: 1122961522}
   - {fileID: 731488733}
+  - {fileID: 1122961522}
   - {fileID: 1620983719}
   - {fileID: 604535179}
   m_Father: {fileID: 0}
@@ -3514,8 +3515,8 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ignoreReversedGraphics: 1
-  blockingObjects: 0
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4800,6 +4801,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 967169233}
   m_GameObject: {fileID: 644640793}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &699869358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 180216, guid: 7f878a4cea3334b4f982c90e441db683, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 699869359}
+  m_Layer: 0
+  m_Name: SpawnPointPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &699869359
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 480216, guid: 7f878a4cea3334b4f982c90e441db683, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699869358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &711653449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5954,7 +5982,7 @@ RectTransform:
   m_LocalScale: {x: .99999994, y: .99999994, z: 1}
   m_Children: []
   m_Father: {fileID: 607986809}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_AnchorMin: {x: .699999988, y: .925000012}
   m_AnchorMax: {x: .949999988, y: .949999988}
   m_AnchoredPosition: {x: -.5, y: .5}
@@ -7736,7 +7764,7 @@ RectTransform:
   m_LocalScale: {x: .99999994, y: .99999994, z: 1}
   m_Children: []
   m_Father: {fileID: 607986809}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: .75999999, y: .839999974}
   m_AnchorMax: {x: .949999988, y: .949999988}
   m_AnchoredPosition: {x: -1, y: .5}
@@ -10181,6 +10209,10 @@ Prefab:
     - target: {fileID: 425328, guid: b1429a2fa1702034ca88d80ab297fe3a, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025328, guid: b1429a2fa1702034ca88d80ab297fe3a, type: 2}
+      propertyPath: field of view
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1429a2fa1702034ca88d80ab297fe3a, type: 2}
@@ -13104,7 +13136,7 @@ Transform:
   - {fileID: 1730220453}
   - {fileID: 1368832234}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!114 &1964979421
 MonoBehaviour:
   m_ObjectHideFlags: 0
