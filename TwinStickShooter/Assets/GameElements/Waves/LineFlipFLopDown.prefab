@@ -446,7 +446,7 @@ MonoBehaviour:
   - {fileID: 492214}
   - {fileID: 492212}
   - {fileID: 492210}
-  Enemy: {fileID: 191336, guid: 2b2caff47a5477c4381d706d1543be33, type: 2}
+  Enemy: {fileID: 191338, guid: 2b2caff47a5477c4381d706d1543be33, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

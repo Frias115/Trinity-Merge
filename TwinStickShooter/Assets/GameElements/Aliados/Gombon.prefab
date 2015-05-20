@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9d039398e26f1488cafcf9e9b1a507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: .5
+  maxSpeed: .300000012
   dragInInput: .100000001
   dragLateral: .5
   dragBreak: .200000003
@@ -752,7 +752,7 @@ MonoBehaviour:
   aceleracionInOppositeDir: 30
   bala: {fileID: 146076}
   rotationInterpolation: 15
-  timeBetweenShots: .150000006
+  timeBetweenShots: .119999997
   invulnerabilityTime: .5
   healthPlayer: 3
   maxLife: 3

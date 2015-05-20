@@ -796,7 +796,7 @@ MonoBehaviour:
   aceleracionInOppositeDir: 60
   bala: {fileID: 127954}
   rotationInterpolation: 15
-  timeBetweenShots: .100000001
+  timeBetweenShots: .200000003
   invulnerabilityTime: .5
   healthPlayer: 1
   maxLife: 1
