@@ -27,11 +27,8 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if (player == null) {
-			player = (GameObject)Instantiate(playerSelectionController.playerActive);
+			player = (GameObject)Instantiate(playerSelectionController.playerActive, spawnPointPlayer.position, spawnPointPlayer.rotation);
 			DontDestroyOnLoad(player);
-			foreach (Transform child in spawnPointPlayer) {
-				Instantiate (playerSelectionController.playerActive, child.position, child.rotation);
-			}
 		}
 		scoreText = _scoreText;
 		chainTimerImage = _chainTimerImage;
