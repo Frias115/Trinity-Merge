@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1 &25584604
 GameObject:
@@ -2995,7 +2996,6 @@ MonoBehaviour:
   - {fileID: 137758, guid: b6fe3034a97f2c7469b0d993eac79453, type: 2}
   - {fileID: 180864, guid: 250b00eb13238744f82bee7774f48514, type: 2}
   - {fileID: 131646, guid: 699531ba5fa21dd4fa86d28af22d2738, type: 2}
-  - {fileID: 131646, guid: 699531ba5fa21dd4fa86d28af22d2738, type: 2}
   spawnPointPlayer: {fileID: 699869359}
 --- !u!114 &485938315
 MonoBehaviour:
@@ -3038,10 +3038,6 @@ MonoBehaviour:
   - {fileID: 163164, guid: eb49fb36f29048346957a27a4d0369a7, type: 2}
   - {fileID: 192208, guid: f4b037b124341324a97f1cbce0352c42, type: 2}
   - {fileID: 162482, guid: fe5f2710a4312df47bbd1078a3ef7387, type: 2}
-  - {fileID: 145090, guid: ddee0f9fdada2bc489293b283e176faf, type: 2}
-  - {fileID: 199898, guid: 0df3c638099c45140a51fba00c4c5be8, type: 2}
-  - {fileID: 192208, guid: f4b037b124341324a97f1cbce0352c42, type: 2}
-  - {fileID: 176424, guid: cf982ccc30759314c9f69bc94b7c2c3d, type: 2}
   waitTime: 1.29999995
   spawnsXWaves: 2
   fade: {fileID: 1620983720}
@@ -3514,8 +3510,8 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ignoreReversedGraphics: 1
-  blockingObjects: 0
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4822,7 +4818,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699869358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: 7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
