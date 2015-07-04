@@ -99,7 +99,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11437760
 MonoBehaviour:
@@ -347,7 +347,7 @@ ParticleSystem:
       minMaxState: 3
     gravityModifier: 0
     inheritVelocity: 0
-    maxNumParticles: 40
+    maxNumParticles: 50
   ShapeModule:
     serializedVersion: 2
     enabled: 1
@@ -397,7 +397,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
       minMaxState: 0
-    cnt0: 20
+    cnt0: 40
     cnt1: 30
     cnt2: 30
     cnt3: 30
@@ -449,7 +449,7 @@ ParticleSystem:
   RotationModule:
     enabled: 1
     curve:
-      scalar: 1396263.38
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1332,7 +1332,7 @@ ParticleSystem:
         rgba: 2482604290
       minMaxState: 2
     startSize:
-      scalar: 1
+      scalar: 1.20000005
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1491,7 +1491,7 @@ ParticleSystem:
   RotationModule:
     enabled: 1
     curve:
-      scalar: 1396263.38
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
