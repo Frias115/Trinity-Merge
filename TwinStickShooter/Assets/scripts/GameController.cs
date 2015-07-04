@@ -27,8 +27,13 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if (player == null) {
-			player = (GameObject)Instantiate(playerSelectionController.playerActive, spawnPointPlayer.position, spawnPointPlayer.rotation);
-			DontDestroyOnLoad(player);
+			score = 0;
+			player = (GameObject)Instantiate (playerSelectionController.playerActive, spawnPointPlayer.position, spawnPointPlayer.rotation);
+			DontDestroyOnLoad (player);
+		} else {
+			scoreText.text = "" + score;
+			player.transform.position = spawnPointPlayer.position;
+			PlayerShip._healthPlayer = PlayerShip._healthPlayerMax;
 		}
 		scoreText = _scoreText;
 		chainTimerImage = _chainTimerImage;
@@ -46,7 +51,7 @@ public class GameController : MonoBehaviour {
 		enemiesKilled++;
 		if (enemiesKilled >= enemiesForPowerup) {
 			enemiesKilled = 0;
-			GameObject.Instantiate(_powerups[Mathf.Min (_powerups.Length - 1, Random.Range(0,_powerups.Length - 1))] ,pos,Quaternion.identity);
+			GameObject.Instantiate(_powerups[Mathf.Min (_powerups.Length - 1, Random.Range(0,_powerups.Length))] ,pos,Quaternion.identity);
 		}
 		}
 

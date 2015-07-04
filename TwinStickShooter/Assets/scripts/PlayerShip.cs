@@ -16,6 +16,7 @@ public class PlayerShip : MonoBehaviour {
 	float shotTimer = 0;
 	float invulnerability = 0;
 	public float invulnerabilityTime = .5f;
+	public float invulnerabilityTimePowerUp = 1.5f;
 	public int healthPlayer = 1;
 	public int maxLife;
 	public static int _healthPlayer;
@@ -130,8 +131,8 @@ public class PlayerShip : MonoBehaviour {
 		}
 		if(col.gameObject.GetComponent<PowerUp03>()) {
 			powerUpTimer3 = 0;
-			if(!powerUpped2) {
-				healthPlayer = healthPlayer * pu_healthFactor;
+			if(!powerUpped3) {
+				invulnerability = invulnerabilityTimePowerUp;
 			}
 			powerUpped3 = true;
 			Destroy(col.gameObject);
@@ -146,10 +147,7 @@ public class PlayerShip : MonoBehaviour {
 	public void Damage(int damage)
 	{
 		if (invulnerability == 0) {
-			invulnerability = invulnerabilityTime;
 			healthPlayer -= damage;
-			CameraMovement.Shake ();
-			CameraMovement.HitStop ();
 			if (healthPlayer <= 0) {
 				_healthPlayer = 0;
 				deathExplosion.Play ();
@@ -158,6 +156,9 @@ public class PlayerShip : MonoBehaviour {
 				Destroy (this.gameObject);
 				playerSelectionController.playerActive = null;
 			}
+			invulnerability = invulnerabilityTime;
+			CameraMovement.Shake ();
+			CameraMovement.HitStop ();
 		}
 	}
 
@@ -198,7 +199,7 @@ public class PlayerShip : MonoBehaviour {
 			powerUpTimer3 += Time.deltaTime;
 			if (powerUpTimer3 > powerUpTime) {
 				if (powerUpped3) {
-					healthPlayer = healthPlayer / pu_healthFactor;
+					//healthPlayer = healthPlayer / pu_healthFactor;
 					powerUpped3 = false;
 				}
 			}
